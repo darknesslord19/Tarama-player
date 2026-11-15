@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+}
+
+def runNo = (System.getenv('GITHUB_RUN_NUMBER') ?: '1').toInteger()
+
+android {
+    namespace 'com.puutv.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.puutv.app'
+        minSdk 21
+        targetSdk 35
+        versionCode runNo
+        versionName "1.0.${runNo}"
+    }
+
+    signingConfigs {
+        puu {
+            storeFile file('puutv.keystore')
+            storePassword 'puutv123'
+            keyAlias 'puutv'
+            keyPassword 'puutv123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.puu
+        }
+        debug {
+            signingConfig signingConfigs.puu
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    def media3 = '1.5.1'
+    implementation "androidx.media3:media3-exoplayer:$media3"
+    implementation "androidx.media3:media3-exoplayer-hls:$media3"
+    implementation "androidx.media3:media3-ui:$media3"
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation 'androidx.annotation:annotation-experimental:1.4.1'
+}

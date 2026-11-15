@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#141414">
+<title>Puu TV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#141414; --card:#1f1f1f; --card2:#262626; --line:#2e2e2e; --txt:#f2efe9; --mut:#8d8a85;
+  --y:#f5c043; --o:#ff6a2b; --wood1:#5a3a24; --wood2:#3b2416; --green:#7dff8a;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);font-family:Nunito,system-ui,sans-serif;overflow:hidden;user-select:none;-webkit-user-select:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.app{height:100vh;height:100dvh;display:flex;flex-direction:column;max-width:720px;margin:auto}
+.left{flex:none;padding:14px 16px 0}
+.right{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 16px}
+
+/* header */
+header{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
+.brand{display:flex;align-items:baseline;gap:12px;flex:1}
+.puu{font-weight:900;font-size:30px;letter-spacing:-1px;color:#efe6d6;line-height:1}
+.puu b{color:var(--y)}
+.tvw{color:var(--y);font-weight:800;letter-spacing:6px;font-size:15px}
+.rbtn{width:46px;height:46px;border-radius:50%;background:var(--card);display:grid;place-items:center}
+.rbtn svg{width:20px;height:20px}
+
+/* TV */
+.tv{position:relative;background:linear-gradient(160deg,var(--wood1),var(--wood2));border-radius:26px;padding:16px 16px 12px;
+  box-shadow:inset 0 2px 0 #ffffff1a,inset 0 -3px 8px #0006,0 12px 28px #0008;border:1px solid #6b4a32}
+.tv::before,.tv::after{content:"";position:absolute;bottom:-9px;width:42px;height:10px;background:#2a190f;border-radius:0 0 6px 6px}
+.tv::before{left:52px}.tv::after{right:52px}
+.bezel{background:#0b0b0b;border-radius:22px;padding:8px;box-shadow:inset 0 0 0 2px #000,inset 0 4px 14px #000}
+.screen{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000}
+.screen video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+.layer{position:absolute;inset:0;display:none}
+.screen[data-s=idle] .l-idle,.screen[data-s=load] .l-load,.screen[data-s=nosig] .l-idle,.screen[data-s=play] .l-play{display:block}
+.bars{position:absolute;inset:0;display:grid;grid-template-rows:72% 28%}
+.bars .top{display:grid;grid-template-columns:repeat(7,1fr)}
+.bars .bot{display:grid;grid-template-columns:2fr 2fr 2fr 1.5fr}
+.msg{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);background:#111d;border:2px solid var(--y);border-radius:12px;
+  padding:8px 20px;text-align:center;box-shadow:0 0 18px #000a}
+.msg h2{margin:0;white-space:nowrap;font-family:VT323,monospace;font-weight:400;font-size:34px;letter-spacing:4px;color:var(--y);line-height:1}
+.msg p{margin:2px 0 0;white-space:nowrap;font-size:13px;color:#ddd}
+.noise{position:absolute;inset:-50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:nz .25s steps(4) infinite;opacity:.9}
+@keyframes nz{0%{transform:translate(0,0)}25%{transform:translate(-8%,5%)}50%{transform:translate(6%,-7%)}75%{transform:translate(-4%,-3%)}100%{transform:translate(3%,6%)}}
+.ch{position:absolute;right:18px;top:10px;font-family:VT323,monospace;font-size:40px;color:var(--green);text-shadow:0 0 10px #7dff8a99;letter-spacing:2px}
+.searching{position:absolute;left:0;right:0;bottom:16%;text-align:center;font-family:VT323,monospace;font-size:24px;color:#fff;text-shadow:0 0 8px #000}
+.badge{position:absolute;left:16px;bottom:14px;display:flex;align-items:stretch;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px #0009;max-width:calc(100% - 80px)}
+.badge i{font-style:normal;background:var(--y);color:#1b1404;font-weight:900;font-size:13px;letter-spacing:2px;padding:6px 12px;display:flex;align-items:center}
+.badge span{background:#111c;padding:6px 14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fsb{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:10px;background:#0007;display:grid;place-items:center}
+.scan{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,#0000 0 2px,#0000002e 2px 3px);border-radius:16px;box-shadow:inset 0 0 40px #000a}
+.panel{display:flex;align-items:center;gap:14px;margin-top:12px}
+.grille{flex:1;height:58px;border-radius:12px;background:repeating-linear-gradient(90deg,#1c120b 0 3px,#3a2617 3px 7px);box-shadow:inset 0 2px 6px #000a}
+.logo2{display:flex;flex-direction:column;align-items:center;line-height:.8}
+.logo2 b{font-weight:900;font-size:34px;color:#f5f0e8;letter-spacing:-1px}
+.logo2 b em{font-style:normal;color:var(--y)}
+.logo2 svg{width:46px;height:12px;margin-top:2px}
+.knob{display:flex;flex-direction:column;align-items:center;gap:6px}
+.knob .k{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#4a4a4a,#151515 70%);box-shadow:0 4px 8px #000a,inset 0 1px 0 #fff2;position:relative;transition:transform .3s}
+.knob .k::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:16px;margin-left:-2px;border-radius:2px;background:var(--y)}
+.knob small{font-size:11px;font-weight:800;letter-spacing:2px;color:#d9c9b4}
+
+/* sources */
+.srcwrap{margin-top:18px;display:none}
+.srcwrap.on{display:block}
+.lbl{font-size:12px;font-weight:800;letter-spacing:4px;color:var(--mut);margin-bottom:8px}
+.srcs{display:flex;gap:10px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}
+.srcs::-webkit-scrollbar,.dial .lab::-webkit-scrollbar,.list::-webkit-scrollbar{display:none}
+.src{flex:none;min-width:88px;height:62px;border-radius:14px;background:var(--card2);border:2px solid transparent;position:relative;
+  display:flex;align-items:baseline;justify-content:center;gap:4px;padding-top:16px;font-weight:900;font-size:24px}
+.src small{font-size:13px;font-weight:800;color:#cfcfcf}
+.src::after{content:"";position:absolute;right:9px;top:9px;width:8px;height:8px;border-radius:50%;background:#4a7bd8}
+.src.fail::after{background:#e5534b}.src.ok::after{background:#3fb950}
+.src.on{border-color:var(--y);background:#2c2616}
+
+/* dial */
+.dial{position:relative;margin:14px 0 10px;border-radius:16px;background:linear-gradient(#1b1b1b,#111);border:1px solid var(--line);height:82px;overflow:hidden;flex:none}
+.dial .ticks{position:absolute;left:0;right:0;top:8px;height:22px;background:repeating-linear-gradient(90deg,#777 0 2px,#0000 2px 14px);opacity:.55;
+  -webkit-mask:linear-gradient(90deg,#0000,#000 12%,#000 88%,#0000);mask:linear-gradient(90deg,#0000,#000 12%,#000 88%,#0000)}
+.dial .ticks::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,#aaa 0 2px,#0000 2px 70px);height:26px}
+.dial .needle{position:absolute;left:50%;top:0;width:4px;margin-left:-2px;height:48px;background:var(--o);box-shadow:0 0 12px var(--o);border-radius:2px;z-index:2;pointer-events:none}
+.dial .lab{position:absolute;left:0;right:0;bottom:6px;display:flex;gap:28px;overflow-x:auto;padding:0 50%;scroll-snap-type:x mandatory;scrollbar-width:none}
+.g{flex:none;scroll-snap-align:center;font-weight:900;font-size:17px;color:#7d7a75;white-space:nowrap;padding:6px 2px}
+.g sup{font-size:12px;font-weight:700;color:#666;vertical-align:baseline;margin-left:6px}
+.g.on{color:var(--y)}.g.on sup{color:#b8902f}
+
+/* search */
+.sbar{display:none;margin-bottom:10px;flex:none}
+.sbar.on{display:block}
+.sbar input{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--txt);font:inherit;font-size:16px;padding:12px 14px;outline:none}
+.sbar input:focus{border-color:var(--y)}
+
+/* list */
+.list{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:2px 2px 24px;scroll-behavior:smooth}
+.item{display:grid;grid-template-columns:48px 76px 1fr 40px;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:var(--card);border:2px solid transparent;text-align:left;width:100%}
+.item .n{font-size:28px;font-weight:700;color:#8a8680;text-align:center}
+.item .lg{width:76px;height:56px;border-radius:12px;background:linear-gradient(145deg,#3a2a1c,#20160f);display:grid;place-items:center;overflow:hidden;font-weight:900;color:var(--y);font-size:18px}
+.item .lg img{max-width:84%;max-height:80%;object-fit:contain}
+.item .t{min-width:0}
+.item .nm{font-weight:800;font-size:19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .mt{display:flex;align-items:center;gap:8px;color:#a8a49e;font-size:15px;margin-top:2px}
+.sig{display:inline-flex;align-items:flex-end;gap:2px;height:14px}
+.sig i{width:4px;background:#555;border-radius:1px}
+.sig i:nth-child(1){height:4px}.sig i:nth-child(2){height:7px}.sig i:nth-child(3){height:10px}.sig i:nth-child(4){height:14px}
+.sig i.on{background:var(--y)}
+.star{width:40px;height:40px;display:grid;place-items:center;color:#777}
+.star svg{width:24px;height:24px}
+.star.on{color:var(--y)}
+.item.on{border-color:var(--y);background:#2a2416;box-shadow:0 0 18px #f5c04322}
+.item.on .n{color:var(--y)}
+.item.sel{border-color:#ffffff88}
+.item.on.sel{border-color:var(--y);box-shadow:0 0 0 3px #f5c04355}
+.empty{color:var(--mut);text-align:center;padding:40px 10px}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:#000d;border:1px solid var(--line);padding:10px 18px;border-radius:12px;
+  opacity:0;transition:.25s;pointer-events:none;z-index:50;font-weight:700;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+/* fullscreen (app) */
+#osd{position:fixed;inset:0;background:#000;display:none;z-index:40}
+body.full #osd{display:block}
+body.full .app{visibility:hidden}
+#osd .screen{position:absolute;inset:0;aspect-ratio:auto;border-radius:0}
+#osd .scan{border-radius:0}
+
+/* TV / wide landscape */
+@media (min-width:900px) and (orientation:landscape){
+  .app{max-width:none;flex-direction:row;padding:10px 18px}
+  .left{width:52%;padding:10px 18px 0 0;display:flex;flex-direction:column}
+  .tv{width:100%;max-width:calc((100vh - 250px) * 1.5);align-self:center}
+  .right{width:48%;padding:10px 0 0}
+  .item{grid-template-columns:52px 80px 1fr 40px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="left">
+    <header>
+      <div class="brand"><span class="puu">p<b>uu</b></span><span class="tvw">TV</span></div>
+      <button class="rbtn" id="bSearch" aria-label="Ara"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg></button>
+      <button class="rbtn" id="bRefresh" aria-label="Yenile"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg></button>
+    </header>
+    <div class="tv">
+      <div class="bezel"><div class="screen" id="screen" data-s="idle"></div></div>
+      <div class="panel">
+        <div class="grille"></div>
+        <div class="logo2"><b>p<em>uu</em></b><svg viewBox="0 0 46 12"><path d="M3 2q20 14 40 0" fill="none" stroke="#f5f0e8" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+        <div class="knob"><button class="k" id="kCh" aria-label="Sonraki kanal"></button><small>KANAL</small></div>
+        <div class="knob"><button class="k" id="kVol" aria-label="Ses"></button><small>SES</small></div>
+      </div>
+    </div>
+    <div class="srcwrap" id="srcwrap"><div class="lbl">KAYNAK</div><div class="srcs" id="srcs"></div></div>
+  </section>
+  <section class="right">
+    <div class="dial"><div class="ticks"></div><div class="needle"></div><div class="lab" id="groups"></div></div>
+    <div class="sbar" id="sbar"><input id="q" type="search" placeholder="Kanal ara…" autocomplete="off"></div>
+    <div class="list" id="list"><div class="empty">Liste yükleniyor…</div></div>
+  </section>
+</div>
+<div id="osd"></div>
+<div class="toast" id="toast"></div>
+
+<template id="tplScreen">
+  <div class="layer l-idle">
+    <div class="bars">
+      <div class="top"><i style="background:#c0c0c0"></i><i style="background:#c0c000"></i><i style="background:#00c0c0"></i><i style="background:#00c000"></i><i style="background:#c000c0"></i><i style="background:#c00000"></i><i style="background:#0000c0"></i></div>
+      <div class="bot"><i style="background:#00214c"></i><i style="background:#fff"></i><i style="background:#32006a"></i><i style="background:#131313"></i></div>
+    </div>
+    <div class="msg"><h2>PUU TV</h2><p class="mtxt">Bir kanal seç</p></div>
+  </div>
+  <div class="layer l-load"><div class="noise"></div><div class="searching">Sinyal aranıyor…</div></div>
+  <div class="layer l-play"></div>
+  <div class="ch" style="display:none"></div>
+  <div class="badge" style="display:none"><i>CANLI</i><span></span></div>
+  <button class="fsb" aria-label="Tam ekran"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  <div class="scan"></div>
+</template>
+
+<script>
+"use strict";
+const M3U_URL = "https://raw.githubusercontent.com/darknesslord19/Tarama-player/refs/heads/main/tr.m3u";
+const APP = typeof window.Android !== "undefined";
+const $ = s => document.querySelector(s);
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("puu." + k); return v == null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem("puu." + k, JSON.stringify(v)); }catch(e){} }
+};
+
+let ALL = [], GROUPS = [], group = store.get("group", "Tümü"), view = [], sel = 0;
+let cur = null, srcIdx = 0, srcState = {}, full = false, watchdog = null, searchQ = "";
+let favs = new Set(store.get("favs", []));
+let volStep = store.get("vol", 0);           // 0..3  (1, .66, .33, 0)
+let knobCh = 0;
+const VOLS = [1, .66, .33, 0], VOLDEG = [135, 45, -45, -135];
+
+/* ---------- screens ---------- */
+const mainScreen = $("#screen");
+const osdScreen = document.createElement("div"); osdScreen.className = "screen"; osdScreen.dataset.s = "idle"; $("#osd").appendChild(osdScreen);
+for (const s of [mainScreen, osdScreen]) s.appendChild($("#tplScreen").content.cloneNode(true));
+osdScreen.querySelector(".fsb").remove();
+let video = null, hls = null;
+if (!APP){
+  video = document.createElement("video");
+  video.playsInline = true; video.autoplay = true; video.setAttribute("playsinline", "");
+  mainScreen.querySelector(".l-play").appendChild(video);
+  video.addEventListener("playing", onReady);
+  video.addEventListener("error", () => onFail("video"));
+}
+function screens(){ return [mainScreen, osdScreen]; }
+function setScreen(state, opts = {}){
+  for (const s of screens()){
+    s.dataset.s = state;
+    const ch = s.querySelector(".ch"), badge = s.querySelector(".badge");
+    ch.style.display = (state === "load" || (state === "play" && opts.flash)) && cur ? "" : "none";
+    if (cur) ch.textContent = "CH " + cur.no;
+    badge.style.display = cur && (state === "play" || state === "load") ? "" : "none";
+    if (cur) badge.querySelector("span").textContent = cur.name;
+    s.querySelector(".mtxt").textContent = state === "nosig" ? "Sinyal yok · başka kaynak dene" : "Bir kanal seç";
+  }
+  if (state === "play" && !APP){ clearTimeout(setScreen.t); setScreen.t = setTimeout(() => screens().forEach(s => s.querySelector(".ch").style.display = "none"), 2500); }
+}
+mainScreen.querySelector(".fsb").onclick = e => { e.stopPropagation(); toggleFull(); };
+mainScreen.addEventListener("click", () => { if (cur) toggleFull(); });
+
+/* ---------- m3u ---------- */
+function parse(text){
+  const map = new Map(); let inf = null, ua = "", ref = "";
+  for (let line of text.split(/\r?\n/)){
+    line = line.trim(); if (!line) continue;
+    if (line.startsWith("#EXTINF")){
+      const a = {}; line.replace(/([\w-]+)="([^"]*)"/g, (m, k, v) => { a[k] = v; });
+      const rest = line.replace(/[\w-]+="[^"]*"/g, "");
+      inf = { a, title: rest.slice(rest.indexOf(",") + 1).trim() }; ua = ""; ref = "";
+    } else if (line.startsWith("#EXTVLCOPT:http-user-agent=")) ua = line.slice(27);
+    else if (line.startsWith("#EXTVLCOPT:http-referrer=")) ref = line.slice(25);
+    else if (line[0] !== "#" && inf){
+      const name = (inf.title || inf.a["tvg-name"] || "Kanal").replace(/\s*\(Yedek\s*\d+\)\s*$/i, "").trim();
+      const key = (inf.a["tvg-id"] || "") + "|" + name.toLocaleLowerCase("tr");
+      let c = map.get(key);
+      if (!c){ c = { id: key, name, logo: inf.a["tvg-logo"] || "", group: inf.a["group-title"] || "Diğer", sources: [] }; map.set(key, c); }
+      if (!c.logo && inf.a["tvg-logo"]) c.logo = inf.a["tvg-logo"];
+      c.sources.push({ url: line, ua, ref }); inf = null;
+    }
+  }
+  const out = [...map.values()]; out.forEach((c, i) => c.no = i + 1); return out;
+}
+async function loadList(force){
+  const cached = store.get("m3u", null);
+  if (cached && !force) apply(cached, true);
+  try{
+    const r = await fetch(M3U_URL + (M3U_URL.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const t = await r.text();
+    if (!t.includes("#EXTINF")) throw new Error("liste boş");
+    store.set("m3u", t); apply(t, false);
+    if (force) toast("Liste yenilendi · " + ALL.length + " kanal");
+  }catch(e){
+    if (!ALL.length) $("#list").innerHTML = '<div class="empty">Liste indirilemedi (' + e.message + ').<br>İnternet bağlantını kontrol edip yenile.</div>';
+    else if (force) toast("Yenilenemedi, kayıtlı liste kullanılıyor");
+  }
+}
+function apply(text, fromCache){
+  const keep = cur && cur.id;
+  ALL = parse(text);
+  const gs = []; for (const c of ALL) if (!gs.includes(c.group)) gs.push(c.group);
+  GROUPS = ["Favoriler", "Tümü", ...gs];
+  if (!GROUPS.includes(group)) group = "Tümü";
+  if (keep){ const n = ALL.find(c => c.id === keep); if (n) cur = n; }
+  renderGroups(); renderList(true);
+  if (fromCache === false && !cur){
+    const last = store.get("last", null), c = last && ALL.find(x => x.id === last);
+    if (c) { sel = Math.max(0, view.indexOf(c)); markSel(); }
+  }
+}
+
+/* ---------- groups (dial) ---------- */
+function groupItems(g){
+  if (g === "Favoriler") return ALL.filter(c => favs.has(c.id));
+  if (g === "Tümü") return ALL;
+  return ALL.filter(c => c.group === g);
+}
+function renderGroups(){
+  const el = $("#groups");
+  el.innerHTML = GROUPS.map(g => `<button class="g${g === group ? " on" : ""}" data-g="${esc(g)}">${g === "Favoriler" ? "★ " : ""}${esc(g)}<sup>${groupItems(g).length}</sup></button>`).join("");
+  el.querySelectorAll(".g").forEach(b => b.onclick = () => setGroup(b.dataset.g));
+  centerGroup(false);
+}
+function centerGroup(smooth){
+  const b = $("#groups .g.on"); if (!b) return;
+  const el = $("#groups"); const x = b.offsetLeft + b.offsetWidth / 2 - el.clientWidth / 2;
+  el.scrollTo({ left: x, behavior: smooth ? "smooth" : "auto" });
+}
+function setGroup(g){
+  if (!GROUPS.includes(g)) return;
+  group = g; store.set("group", g); searchQ = ""; $("#q").value = "";
+  document.querySelectorAll("#groups .g").forEach(b => b.classList.toggle("on", b.dataset.g === g));
+  centerGroup(true); renderList(true);
+}
+function stepGroup(d){ const i = GROUPS.indexOf(group); setGroup(GROUPS[(i + d + GROUPS.length) % GROUPS.length]); }
+
+/* ---------- list ---------- */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const norm = s => s.toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ı/g, "i");
+function initials(n){ const w = n.replace(/[^\p{L}\p{N} ]/gu, "").split(/\s+/).filter(Boolean); return ((w[0] || "?")[0] + (w[1] ? w[1][0] : (w[0] || "")[1] || "")).toUpperCase(); }
+const STAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"/></svg>';
+function renderList(resetSel){
+  view = searchQ ? ALL.filter(c => norm(c.name).includes(norm(searchQ))) : groupItems(group);
+  const el = $("#list");
+  if (!view.length){ el.innerHTML = `<div class="empty">${group === "Favoriler" && !searchQ ? "Henüz favori yok. Kanalların yanındaki ☆ ile ekleyebilirsin." : "Kanal bulunamadı"}</div>`; return; }
+  el.innerHTML = view.map((c, i) => {
+    const n = c.sources.length, bars = n >= 5 ? 4 : n >= 3 ? 3 : n;
+    const sig = [1, 2, 3, 4].map(k => `<i class="${k <= bars ? "on" : ""}"></i>`).join("");
+    const fav = favs.has(c.id);
+    return `<button class="item${cur && cur.id === c.id ? " on" : ""}" data-i="${i}">
+      <span class="n">${c.no}</span>
+      <span class="lg">${c.logo ? `<img loading="lazy" src="${esc(c.logo)}" alt="" onerror="this.replaceWith(document.createTextNode('${esc(initials(c.name))}'))">` : esc(initials(c.name))}</span>
+      <span class="t"><div class="nm">${esc(c.name)}</div><div class="mt"><span class="sig">${sig}</span>${n} kaynak</div></span>
+      <span class="star${fav ? " on" : ""}" data-fav="${i}">${STAR}</span></button>`;
+  }).join("");
+  el.querySelectorAll(".item").forEach(b => b.onclick = e => {
+    const i = +b.dataset.i;
+    if (e.target.closest(".star")){ toggleFav(view[i]); return; }
+    sel = i; markSel();
+    if (cur && cur.id === view[i].id) toggleFull(); else play(view[i]);
+  });
+  if (resetSel){ const i = cur ? view.findIndex(c => c.id === cur.id) : -1; sel = i >= 0 ? i : 0; el.scrollTop = 0; }
+  markSel(true);
+}
+function markSel(instant){
+  const items = document.querySelectorAll("#list .item");
+  items.forEach((b, i) => b.classList.toggle("sel", i === sel && tvMode));
+  const b = items[sel]; if (b) b.scrollIntoView({ block: "nearest", behavior: instant ? "auto" : "smooth" });
+}
+function markOn(){ document.querySelectorAll("#list .item").forEach(b => b.classList.toggle("on", !!cur && view[+b.dataset.i] && view[+b.dataset.i].id === cur.id)); }
+function toggleFav(c){
+  if (favs.has(c.id)) { favs.delete(c.id); toast("Favorilerden çıkarıldı"); } else { favs.add(c.id); toast("★ Favorilere eklendi"); }
+  store.set("favs", [...favs]); const keepSel = sel; renderGroups(); renderList(false); sel = Math.min(keepSel, view.length - 1); markSel(true);
+}
+
+/* ---------- playback ---------- */
+function play(c, si = 0){
+  cur = c; srcIdx = si; srcState = {}; store.set("last", c.id);
+  markOn(); renderSources(); startSource();
+}
+function startSource(){
+  clearTimeout(watchdog);
+  const s = cur.sources[srcIdx]; srcState[srcIdx] = "try"; renderSources();
+  setScreen("load");
+  if (APP){ Android.play(s.url, s.ua || "", s.ref || ""); }
+  else webPlay(s.url);
+  watchdog = setTimeout(() => onFail("timeout"), 15000);
+}
+function webPlay(url){
+  if (hls){ hls.destroy(); hls = null; }
+  video.removeAttribute("src"); video.load();
+  const isHls = /m3u8|\.php|\/hls\//i.test(url) || !/\.(mp4|ts|mkv|webm)(\?|$)/i.test(url);
+  if (isHls && window.Hls && Hls.isSupported()){
+    hls = new Hls({ enableWorker: true, lowLatencyMode: false, manifestLoadingTimeOut: 12000 });
+    hls.on(Hls.Events.ERROR, (e, d) => { if (d.fatal) onFail("hls"); });
+    hls.loadSource(url); hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}));
+  } else { video.src = url; video.play().catch(() => {}); }
+  video.volume = VOLS[volStep]; video.muted = VOLS[volStep] === 0;
+}
+function onReady(){
+  if (!cur) return;
+  clearTimeout(watchdog); srcState[srcIdx] = "ok"; renderSources(); setScreen("play", { flash: true });
+}
+function onFail(why){
+  if (!cur) return;
+  clearTimeout(watchdog); srcState[srcIdx] = "fail"; renderSources();
+  const next = cur.sources.findIndex((s, i) => i > srcIdx && srcState[i] !== "fail");
+  if (next >= 0){ srcIdx = next; toast("Kaynak " + (next + 1) + " deneniyor…"); startSource(); }
+  else { if (APP) Android.stop(); else if (hls){ hls.destroy(); hls = null; } setScreen("nosig"); toast("Bu kanalın kaynakları şu an açılmıyor"); }
+}
+window.onNativeState = st => { if (st === "ready") onReady(); };
+window.onNativeError = msg => onFail(msg);
+window.onNativeTap = () => toggleFull();
+
+function renderSources(){
+  const w = $("#srcwrap");
+  if (!cur){ w.classList.remove("on"); return; }
+  w.classList.add("on");
+  $("#srcs").innerHTML = cur.sources.map((s, i) =>
+    `<button class="src${i === srcIdx ? " on" : ""}${srcState[i] === "fail" ? " fail" : srcState[i] === "ok" ? " ok" : ""}" data-i="${i}">${i + 1}<small>${s.url.startsWith("https") ? "HTTPS" : "HTTP"}</small></button>`).join("");
+  $("#srcs").querySelectorAll(".src").forEach(b => b.onclick = () => { srcIdx = +b.dataset.i; delete srcState[srcIdx]; startSource(); });
+  const on = $("#srcs .src.on"); if (on) on.scrollIntoView({ inline: "nearest", block: "nearest" });
+  sendRect();
+}
+function zap(d){
+  if (!view.length) return;
+  let i = cur ? view.findIndex(c => c.id === cur.id) : -1;
+  i = (i + d + view.length) % view.length; sel = i; markSel(); play(view[i]);
+}
+function switchSource(d){
+  if (!cur || cur.sources.length < 2) return;
+  srcIdx = (srcIdx + d + cur.sources.length) % cur.sources.length; delete srcState[srcIdx];
+  toast("Kaynak " + (srcIdx + 1) + " / " + cur.sources.length); startSource();
+}
+
+/* ---------- fullscreen ---------- */
+function toggleFull(on){
+  if (!cur) return;
+  full = on === undefined ? !full : on;
+  if (APP){ document.body.classList.toggle("full", full); Android.setFullscreen(full); }
+  else{
+    try{
+      if (full){ (mainScreen.requestFullscreen || mainScreen.webkitRequestFullscreen || (() => { video.webkitEnterFullscreen && video.webkitEnterFullscreen(); })).call(mainScreen); }
+      else if (document.fullscreenElement || document.webkitFullscreenElement) (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    }catch(e){}
+  }
+}
+document.addEventListener("fullscreenchange", () => { if (!document.fullscreenElement) full = false; });
+
+/* ---------- native video rect ---------- */
+function sendRect(){
+  if (!APP) return;
+  const r = mainScreen.getBoundingClientRect();
+  try{ Android.setRect(r.left, r.top, r.width, r.height, 16); }catch(e){}
+}
+if (APP){ new ResizeObserver(sendRect).observe(mainScreen); addEventListener("resize", sendRect); setTimeout(sendRect, 300); }
+
+/* ---------- knobs / buttons ---------- */
+function setVol(step){
+  volStep = step; store.set("vol", step); $("#kVol").style.transform = `rotate(${VOLDEG[step]}deg)`;
+  if (APP) Android.setVolume(VOLS[step]); else if (video){ video.volume = VOLS[step]; video.muted = VOLS[step] === 0; }
+}
+$("#kVol").onclick = () => { setVol((volStep + 1) % 4); toast(VOLS[volStep] ? "Ses %" + Math.round(VOLS[volStep] * 100) : "Ses kapalı"); };
+$("#kCh").onclick = () => { knobCh += 30; $("#kCh").style.transform = `rotate(${knobCh}deg)`; zap(1); };
+$("#bRefresh").onclick = () => { $("#bRefresh").animate([{ transform: "rotate(0)" }, { transform: "rotate(360deg)" }], 600); loadList(true); };
+$("#bSearch").onclick = () => { const b = $("#sbar"); b.classList.toggle("on"); if (b.classList.contains("on")) $("#q").focus(); else { searchQ = ""; $("#q").value = ""; renderList(true); } };
+$("#q").oninput = e => { searchQ = e.target.value.trim(); renderList(true); };
+
+let toastT;
+function toast(t){ const el = $("#toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("on"), 2200); }
+
+/* ---------- remote control / keyboard ---------- */
+let tvMode = false;
+function onKey(k){
+  tvMode = true;
+  if (full){
+    if (k === "up" || k === "chup") zap(-1);
+    else if (k === "down" || k === "chdown") zap(1);
+    else if (k === "left") switchSource(-1);
+    else if (k === "right") switchSource(1);
+    else if (k === "ok") { setScreen(mainScreen.dataset.s, { flash: true }); toast(cur.name + " · kaynak " + (srcIdx + 1) + "/" + cur.sources.length); }
+    else if (k === "back") toggleFull(false);
+    return true;
+  }
+  if (k === "up"){ sel = Math.max(0, sel - 1); markSel(); }
+  else if (k === "down"){ sel = Math.min(view.length - 1, sel + 1); markSel(); }
+  else if (k === "left") stepGroup(-1);
+  else if (k === "right") stepGroup(1);
+  else if (k === "chup") zap(-1);
+  else if (k === "chdown") zap(1);
+  else if (k === "ok"){ const c = view[sel]; if (!c) return true; if (cur && cur.id === c.id) toggleFull(true); else play(c); }
+  else if (k === "menu"){ const c = view[sel]; if (c) toggleFav(c); }
+  else if (k === "back") return onBack();
+  return true;
+}
+window.onKey = onKey;
+window.onBack = function(){
+  if (full){ toggleFull(false); return true; }
+  if ($("#sbar").classList.contains("on")){ $("#bSearch").click(); return true; }
+  return false;
+};
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT"){ if (e.key === "Escape") $("#bSearch").click(); return; }
+  const map = { ArrowUp: "up", ArrowDown: "down", ArrowLeft: "left", ArrowRight: "right", Enter: "ok", " ": "ok", PageUp: "chup", PageDown: "chdown", Escape: "back", ContextMenu: "menu", f: "menu" };
+  const k = map[e.key] || (e.keyCode === 23 ? "ok" : null);
+  if (!k) return;
+  e.preventDefault(); onKey(k);
+});
+document.addEventListener("touchstart", () => { if (tvMode){ tvMode = false; markSel(true); } }, { passive: true });
+
+/* ---------- start ---------- */
+setScreen("idle");
+setVol(volStep);
+if (!APP){
+  const s = document.createElement("script");
+  s.src = "https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"; document.head.appendChild(s);
+}
+loadList(false);
+</script>
+</body>
+</html>
