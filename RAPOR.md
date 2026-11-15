@@ -15,7 +15,6 @@
 | Sonuç | ✅ 1191 sağlam · ⚠️ 29 kararsız · 🚫 194 engelli · ❌ 2039 ölü |
 | Karantinada (bu tur atlandı) | 703 |
 | Kaynak listesi | 294/312 indirildi |
-| Site çözücüleri (7 spor kaynağı) | 94 aday (sağlık testine tabi) |
 | Aday (hafızadan geri çağrılan) | 4155 (555) |
 | Resmî site çözücüleri · JSON veritabanı · kardeş sunucu | 10 · 149 · 143 aday |
 | Türk listesi sayılan kaynak | 197 |

@@ -11,7 +11,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as
 from dataclasses import dataclass, field
 
 from . import clean, extra_sources, guard, identity, liveness, official, output, parse, siblings, sources
-from . import site_providers
 from . import budget
 from . import config as C
 from .fetch import get_json, get_text
@@ -24,7 +23,6 @@ log = logging.getLogger("build")
 class RunOptions:
     search: bool = True          # GitHub araması
     fetch_sources: bool = True   # kaynak listelerini indir (False = yalnızca hafıza + mevcut liste)
-    fetch_sites: bool = True     # siteye özel spor çözücülerini çalıştır
     deep: bool = C.DEEP_PROBE
     progress: bool = C.PROGRESS_CHECK
     max_test: int = C.MAX_TEST
@@ -41,7 +39,6 @@ class RunStats:
     filtered: Counter = field(default_factory=Counter)
     candidates: int = 0
     from_memory: int = 0
-    from_sites: int = 0
     from_official: int = 0       # kanalın kendi sitesinden çözülen adres
     from_extra: int = 0          # famelack vb. JSON veritabanları
     from_siblings: int = 0       # kardeş sunucu adayları (TRT medya↔live …)
@@ -123,11 +120,6 @@ def gather(reg, opts, st, src_state, url_state, armor_urls):
         ext = extra_sources.famelack()
         pool.extend(ext)
         st.from_extra = len(ext)
-    if opts.fetch_sites and opts.fetch_sources:
-        site_chans = site_providers.collect()
-        pool.extend(site_chans)
-        st.from_sites = len(site_chans)
-        log.info("Site çözücülerinden %d aday (hepsi sağlık testine tabi)", st.from_sites)
     for c in pool:
         c.raw_name = c.name
     # Hafıza: kaynak listesi bu tur gelmese bile son günlerde sağlam olan adresleri tekrar dene.
