@@ -26,11 +26,9 @@
 - Kimlik: **1** kanal (1 kayıt)
 - Sağlam: **0** · Çalışmayan: **1**
 - Kendi adresi bozuk ama otomatik yedekle kurtarılan: **0**
-- ⚠️ Zırhlı listede kullanıcı adı/şifre içeren **1** adres var. Depo herkese açıksa bu hesap bilgileri herkes tarafından görülebilir.
 
 <details><summary>Çalışmayan zırhlı kanallar</summary>
 
-- GET PHP USERNAME MUHITTIN&PASSWORD 6VFNEZI5I6&TYPE M3U_PLUS& — 1 kayıt · ffprobe: no streams
 
 </details>
 

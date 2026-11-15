@@ -21,21 +21,11 @@
   "sources_total": 312
  },
  "armored": {
-  "channels": 1,
+  "channels": 0,
   "healthy": 0,
   "rescued_by_auto": 0
  },
  "channels": [
-  {
-   "id": "x-getphpusernamemuhittinpassword6vfnezi5i6typem3uplus",
-   "name": "GET PHP USERNAME MUHITTIN&PASSWORD 6VFNEZI5I6&TYPE M3U_PLUS&",
-   "group": "TR-DİĞER",
-   "status": "dead",
-   "score": 0,
-   "armored": true,
-   "ok_sources": 0,
-   "sources": 1
-  },
   {
    "id": "trt1",
    "name": "TRT 1",
