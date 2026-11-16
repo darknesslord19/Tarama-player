@@ -101,7 +101,9 @@ header{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
 .item{display:grid;grid-template-columns:48px 76px 1fr 40px;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:var(--card);border:2px solid transparent;text-align:left;width:100%}
 .item .n{font-size:28px;font-weight:700;color:#8a8680;text-align:center}
 .item .lg{width:76px;height:56px;border-radius:12px;background:linear-gradient(145deg,#3a2a1c,#20160f);display:grid;place-items:center;overflow:hidden;font-weight:900;color:var(--y);font-size:18px}
-.item .lg img{max-width:84%;max-height:80%;object-fit:contain}
+.item .lg{position:relative}
+.item .lg img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;padding:7px 9px;box-sizing:border-box}
+.item .lg.lt{background:linear-gradient(145deg,#f1f1f3,#d7d8dd)}
 .item .t{min-width:0}
 .item .nm{font-weight:800;font-size:19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .item .mt{display:flex;align-items:center;gap:8px;color:#a8a49e;font-size:15px;margin-top:2px}
@@ -175,6 +177,8 @@ body.modern .list{gap:8px}
 body.modern .item{grid-template-columns:40px 64px 1fr 40px;gap:12px;padding:10px 12px;border-radius:14px;border-width:1px;border-color:var(--line)}
 body.modern .item .n{font-size:16px;font-weight:800;color:#66666f}
 body.modern .item .lg{width:64px;height:46px;border-radius:10px;background:#23232a;color:#fff;font-size:15px}
+body.modern .item .lg.lt{background:#ececef}
+body.modern .item .lg img{padding:5px 7px}
 body.modern .item .nm{font-size:17px}
 body.modern .item .mt{font-size:13px;color:#8a8a94}
 body.modern .item.on{background:#24121399;border-color:var(--red);box-shadow:0 0 0 1px var(--red)}
@@ -381,7 +385,7 @@ function renderList(resetSel){
     const fav = favs.has(c.id);
     return `<button class="item${cur && cur.id === c.id ? " on" : ""}" data-i="${i}">
       <span class="n">${c.no}</span>
-      <span class="lg">${c.logo ? `<img loading="lazy" src="${esc(c.logo)}" alt="" onerror="this.replaceWith(document.createTextNode('${esc(initials(c.name))}'))">` : esc(initials(c.name))}</span>
+      <span class="lg">${c.logo ? `<img loading="lazy" crossorigin="anonymous" data-ini="${esc(initials(c.name))}" src="${esc(c.logo)}" alt="" onload="logoOk(this)" onerror="logoErr(this)">` : esc(initials(c.name))}</span>
       <span class="t"><div class="nm">${esc(c.name)}</div><div class="mt"><span class="sig">${sig}</span>${n} kaynak</div></span>
       <span class="star${fav ? " on" : ""}" data-fav="${i}">${STAR}</span></button>`;
   }).join("");
@@ -394,6 +398,28 @@ function renderList(resetSel){
   if (resetSel){ const i = cur ? view.findIndex(c => c.id === cur.id) : -1; sel = i >= 0 ? i : 0; el.scrollTop = 0; }
   markSel(true);
 }
+/* logo: koyu logolara açık zemin */
+const logoTone = new Map();
+window.logoOk = function(img){
+  const box = img.parentNode, key = img.getAttribute("src");
+  if (logoTone.has(key)){ box.classList.toggle("lt", logoTone.get(key)); return; }
+  if (!img.crossOrigin) return;
+  try{
+    const N = 32, cv = document.createElement("canvas"); cv.width = cv.height = N;
+    const ctx = cv.getContext("2d", { willReadFrequently: true }); ctx.drawImage(img, 0, 0, N, N);
+    const d = ctx.getImageData(0, 0, N, N).data; let sum = 0, n = 0, dark = 0;
+    for (let i = 0; i < d.length; i += 4){
+      if (d[i + 3] < 120) continue;
+      const l = 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2]; sum += l; n++; if (l < 70) dark++;
+    }
+    const need = n > 20 && (sum / n < 75 || dark / n > 0.45);
+    logoTone.set(key, need); box.classList.toggle("lt", need);
+  }catch(e){ logoTone.set(key, false); }
+};
+window.logoErr = function(img){
+  if (img.crossOrigin){ const u = img.getAttribute("src"); img.removeAttribute("crossorigin"); img.src = ""; img.src = u; return; }
+  img.replaceWith(document.createTextNode(img.dataset.ini || "?"));
+};
 function markSel(instant){
   const items = document.querySelectorAll("#list .item");
   items.forEach((b, i) => b.classList.toggle("sel", i === sel && tvMode));
