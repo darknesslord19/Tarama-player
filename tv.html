@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="theme-color" content="#141414">
-<title>Puu TV</title>
+<title>DarknesTv</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=VT323&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#141414; --card:#1f1f1f; --card2:#262626; --line:#2e2e2e; --txt:#f2efe9; --mut:#8d8a85;
-  --y:#f5c043; --o:#ff6a2b; --wood1:#5a3a24; --wood2:#3b2416; --green:#7dff8a;
+  --y:#f5c043; --red:#e53935; --o:#ff6a2b; --wood1:#5a3a24; --wood2:#3b2416; --green:#7dff8a;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);font-family:Nunito,system-ui,sans-serif;overflow:hidden;user-select:none;-webkit-user-select:none}
@@ -22,9 +22,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* header */
 header{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
 .brand{display:flex;align-items:baseline;gap:12px;flex:1}
-.puu{font-weight:900;font-size:30px;letter-spacing:-1px;color:#efe6d6;line-height:1}
-.puu b{color:var(--y)}
-.tvw{color:var(--y);font-weight:800;letter-spacing:6px;font-size:15px}
+.puu{font-weight:900;font-size:28px;letter-spacing:-.5px;color:#f4f1ec;line-height:1}
+.puu b{color:var(--red)}
 .rbtn{width:46px;height:46px;border-radius:50%;background:var(--card);display:grid;place-items:center}
 .rbtn svg{width:20px;height:20px}
 
@@ -43,6 +42,7 @@ header{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
 .bars .bot{display:grid;grid-template-columns:2fr 2fr 2fr 1.5fr}
 .msg{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);background:#111d;border:2px solid var(--y);border-radius:12px;
   padding:8px 20px;text-align:center;box-shadow:0 0 18px #000a}
+.msg h2 span{color:#ff5a52}
 .msg h2{margin:0;white-space:nowrap;font-family:VT323,monospace;font-weight:400;font-size:34px;letter-spacing:4px;color:var(--y);line-height:1}
 .msg p{margin:2px 0 0;white-space:nowrap;font-size:13px;color:#ddd}
 .noise{position:absolute;inset:-50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -58,9 +58,9 @@ header{display:flex;align-items:center;gap:10px;margin:4px 0 12px}
 .panel{display:flex;align-items:center;gap:14px;margin-top:12px}
 .grille{flex:1;height:58px;border-radius:12px;background:repeating-linear-gradient(90deg,#1c120b 0 3px,#3a2617 3px 7px);box-shadow:inset 0 2px 6px #000a}
 .logo2{display:flex;flex-direction:column;align-items:center;line-height:.8}
-.logo2 b{font-weight:900;font-size:34px;color:#f5f0e8;letter-spacing:-1px}
-.logo2 b em{font-style:normal;color:var(--y)}
-.logo2 svg{width:46px;height:12px;margin-top:2px}
+.logo2 b{font-weight:900;font-size:21px;color:#f5f0e8;letter-spacing:-.3px;line-height:1}
+.logo2 b em{font-style:normal;color:var(--red)}
+.logo2 span{display:block;width:70%;height:3px;border-radius:2px;background:var(--red);margin-top:6px;opacity:.85}
 .knob{display:flex;flex-direction:column;align-items:center;gap:6px}
 .knob .k{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#4a4a4a,#151515 70%);box-shadow:0 4px 8px #000a,inset 0 1px 0 #fff2;position:relative;transition:transform .3s}
 .knob .k::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:16px;margin-left:-2px;border-radius:2px;background:var(--y)}
@@ -129,6 +129,57 @@ body.full .app{visibility:hidden}
 #osd .screen{position:absolute;inset:0;aspect-ratio:auto;border-radius:0}
 #osd .scan{border-radius:0}
 
+/* control bar (modern) */
+.ctrl{display:none;align-items:center;gap:10px;margin-top:12px}
+.ctrl button{flex:none;width:46px;height:46px;border-radius:14px;background:var(--card);display:grid;place-items:center}
+.ctrl .now{flex:1;min-width:0;height:46px;border-radius:14px;background:var(--card);display:flex;align-items:center;gap:10px;padding:0 14px;font-weight:800;white-space:nowrap}
+.ctrl .now i{flex:none;width:9px;height:9px;border-radius:50%;background:#555}
+.ctrl .now.live i{background:var(--red);box-shadow:0 0 10px var(--red)}
+.ctrl .now span{overflow:hidden;text-overflow:ellipsis}
+.ctrl.mute .w1,.ctrl.mute .w2,.ctrl.v1 .w2{display:none}
+
+/* ===== MODERN THEME ===== */
+body.modern{--bg:#0c0c0f;--card:#17171c;--card2:#1d1d23;--line:#25252d;--y:#ef4444;--o:#ef4444;--mut:#7c7c88}
+body.modern .tv{background:none;border:0;box-shadow:none;padding:0;border-radius:0}
+body.modern .tv::before,body.modern .tv::after,body.modern .panel,body.modern .scan,body.modern .bars,body.modern .noise,body.modern .fsb{display:none}
+body.modern .bezel{padding:0;background:none;box-shadow:none;border-radius:18px}
+body.modern .screen{border-radius:18px;box-shadow:0 14px 40px #000c,0 0 0 1px #ffffff10}
+body.modern .l-idle,body.modern .l-load{background:radial-gradient(120% 100% at 25% 15%,#3a1013 0,#16080a 45%,#0c0c0f 75%)}
+body.modern .msg{background:none;border:0;box-shadow:none;top:50%}
+body.modern .msg h2{font-family:Nunito,system-ui,sans-serif;font-weight:900;font-size:32px;letter-spacing:-.5px;color:#fff}
+body.modern .msg h2 span{color:var(--red)}
+body.modern .msg p{color:#a3a3ad;margin-top:6px}
+body.modern .l-load .searching{top:50%;bottom:auto;transform:translateY(-50%);font-family:Nunito,system-ui,sans-serif;font-size:15px;font-weight:700;color:#c8c8d0;text-shadow:none}
+body.modern .l-load .searching::before{content:"";display:block;width:38px;height:38px;margin:0 auto 12px;border:3px solid #ffffff1f;border-top-color:var(--red);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+body.modern .ch{top:12px;right:12px;font-family:Nunito,system-ui,sans-serif;font-weight:800;font-size:13px;letter-spacing:1px;color:#fff;text-shadow:none;background:#000a;padding:5px 12px;border-radius:999px}
+body.modern .badge{border-radius:999px;left:12px;bottom:12px}
+body.modern .badge i{background:var(--red);color:#fff;font-size:11px;padding:5px 11px}
+body.modern .badge span{font-size:14px;padding:5px 14px}
+body.modern .ctrl{display:flex}
+body.modern .dial{height:auto;background:none;border:0;border-radius:0;margin:16px 0 12px;overflow:visible}
+body.modern .dial .ticks,body.modern .dial .needle{display:none}
+body.modern .dial .lab{position:static;padding:2px 0;gap:8px;scroll-snap-type:none}
+body.modern .g{background:var(--card);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:800;color:#b9b9c2}
+body.modern .g sup{color:#77777f}
+body.modern .g.on{background:var(--red);color:#fff}
+body.modern .g.on sup{color:#ffd0cd}
+body.modern .srcwrap{margin-top:14px}
+body.modern .lbl{letter-spacing:2px;font-size:11px}
+body.modern .src{min-width:72px;height:42px;padding:0 18px 0 14px;border-radius:999px;align-items:center;font-size:17px;border-width:1px}
+body.modern .src small{font-size:11px}
+body.modern .src::after{top:50%;margin-top:-3px;right:8px;width:6px;height:6px}
+body.modern .src.on{background:#2a1214}
+body.modern .rbtn{border-radius:14px}
+body.modern .list{gap:8px}
+body.modern .item{grid-template-columns:40px 64px 1fr 40px;gap:12px;padding:10px 12px;border-radius:14px;border-width:1px;border-color:var(--line)}
+body.modern .item .n{font-size:16px;font-weight:800;color:#66666f}
+body.modern .item .lg{width:64px;height:46px;border-radius:10px;background:#23232a;color:#fff;font-size:15px}
+body.modern .item .nm{font-size:17px}
+body.modern .item .mt{font-size:13px;color:#8a8a94}
+body.modern .item.on{background:#24121399;border-color:var(--red);box-shadow:0 0 0 1px var(--red)}
+body.modern .item.on .n{color:var(--red)}
+
 /* TV / wide landscape */
 @media (min-width:900px) and (orientation:landscape){
   .app{max-width:none;flex-direction:row;padding:10px 18px}
@@ -143,7 +194,8 @@ body.full .app{visibility:hidden}
 <div class="app">
   <section class="left">
     <header>
-      <div class="brand"><span class="puu">p<b>uu</b></span><span class="tvw">TV</span></div>
+      <div class="brand"><span class="puu">Darknes<b>Tv</b></span></div>
+      <button class="rbtn" id="bTheme" aria-label="Tema değiştir"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="#fff"/></svg></button>
       <button class="rbtn" id="bSearch" aria-label="Ara"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg></button>
       <button class="rbtn" id="bRefresh" aria-label="Yenile"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg></button>
     </header>
@@ -151,10 +203,17 @@ body.full .app{visibility:hidden}
       <div class="bezel"><div class="screen" id="screen" data-s="idle"></div></div>
       <div class="panel">
         <div class="grille"></div>
-        <div class="logo2"><b>p<em>uu</em></b><svg viewBox="0 0 46 12"><path d="M3 2q20 14 40 0" fill="none" stroke="#f5f0e8" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+        <div class="logo2"><b>Darknes<em>Tv</em></b><span></span></div>
         <div class="knob"><button class="k" id="kCh" aria-label="Sonraki kanal"></button><small>KANAL</small></div>
         <div class="knob"><button class="k" id="kVol" aria-label="Ses"></button><small>SES</small></div>
       </div>
+    </div>
+    <div class="ctrl">
+      <button id="cPrev" aria-label="Önceki kanal"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <div class="now" id="cNow"><i></i><span>Bir kanal seç</span></div>
+      <button id="cNext" aria-label="Sonraki kanal"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+      <button id="cVol" aria-label="Ses"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M4 9h4l5-4v14l-5-4H4z" fill="#fff"/><path class="w1" d="M16 9.5a3.5 3.5 0 0 1 0 5"/><path class="w2" d="M18.5 7a7 7 0 0 1 0 10"/></svg></button>
+      <button id="cFull" aria-label="Tam ekran"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
     </div>
     <div class="srcwrap" id="srcwrap"><div class="lbl">KAYNAK</div><div class="srcs" id="srcs"></div></div>
   </section>
@@ -173,7 +232,7 @@ body.full .app{visibility:hidden}
       <div class="top"><i style="background:#c0c0c0"></i><i style="background:#c0c000"></i><i style="background:#00c0c0"></i><i style="background:#00c000"></i><i style="background:#c000c0"></i><i style="background:#c00000"></i><i style="background:#0000c0"></i></div>
       <div class="bot"><i style="background:#00214c"></i><i style="background:#fff"></i><i style="background:#32006a"></i><i style="background:#131313"></i></div>
     </div>
-    <div class="msg"><h2>PUU TV</h2><p class="mtxt">Bir kanal seç</p></div>
+    <div class="msg"><h2>DARKNES <span>TV</span></h2><p class="mtxt">Bir kanal seç</p></div>
   </div>
   <div class="layer l-load"><div class="noise"></div><div class="searching">Sinyal aranıyor…</div></div>
   <div class="layer l-play"></div>
@@ -224,6 +283,8 @@ function setScreen(state, opts = {}){
     if (cur) badge.querySelector("span").textContent = cur.name;
     s.querySelector(".mtxt").textContent = state === "nosig" ? "Sinyal yok · başka kaynak dene" : "Bir kanal seç";
   }
+  const now = $("#cNow"); now.classList.toggle("live", state === "play");
+  now.querySelector("span").textContent = cur ? cur.no + " · " + cur.name + (state === "load" ? " — bağlanıyor…" : state === "nosig" ? " — sinyal yok" : "") : "Bir kanal seç";
   if (state === "play" && !APP){ clearTimeout(setScreen.t); setScreen.t = setTimeout(() => screens().forEach(s => s.querySelector(".ch").style.display = "none"), 2500); }
 }
 mainScreen.querySelector(".fsb").onclick = e => { e.stopPropagation(); toggleFull(); };
@@ -423,7 +484,7 @@ document.addEventListener("fullscreenchange", () => { if (!document.fullscreenEl
 function sendRect(){
   if (!APP) return;
   const r = mainScreen.getBoundingClientRect();
-  try{ Android.setRect(r.left, r.top, r.width, r.height, 16); }catch(e){}
+  try{ Android.setRect(r.left, r.top, r.width, r.height, theme === "modern" ? 18 : 16); }catch(e){}
 }
 if (APP){ new ResizeObserver(sendRect).observe(mainScreen); addEventListener("resize", sendRect); setTimeout(sendRect, 300); }
 
@@ -431,8 +492,19 @@ if (APP){ new ResizeObserver(sendRect).observe(mainScreen); addEventListener("re
 function setVol(step){
   volStep = step; store.set("vol", step); $("#kVol").style.transform = `rotate(${VOLDEG[step]}deg)`;
   if (APP) Android.setVolume(VOLS[step]); else if (video){ video.volume = VOLS[step]; video.muted = VOLS[step] === 0; }
+  const c = $(".ctrl"); c.classList.toggle("mute", step === 3); c.classList.toggle("v1", step === 2);
 }
-$("#kVol").onclick = () => { setVol((volStep + 1) % 4); toast(VOLS[volStep] ? "Ses %" + Math.round(VOLS[volStep] * 100) : "Ses kapalı"); };
+let theme = store.get("theme", "retro");
+function setTheme(t){
+  theme = t; store.set("theme", t); document.body.classList.toggle("modern", t === "modern");
+  const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = t === "modern" ? "#0c0c0f" : "#141414";
+  centerGroup(false); sendRect(); setTimeout(sendRect, 120); setTimeout(sendRect, 500);
+}
+$("#bTheme").onclick = () => { setTheme(theme === "modern" ? "retro" : "modern"); toast(theme === "modern" ? "Modern tema" : "Retro tema"); };
+$("#cPrev").onclick = () => zap(-1);
+$("#cNext").onclick = () => zap(1);
+$("#cFull").onclick = () => toggleFull();
+$("#kVol").onclick = $("#cVol").onclick = () => { setVol((volStep + 1) % 4); toast(VOLS[volStep] ? "Ses %" + Math.round(VOLS[volStep] * 100) : "Ses kapalı"); };
 $("#kCh").onclick = () => { knobCh += 30; $("#kCh").style.transform = `rotate(${knobCh}deg)`; zap(1); };
 $("#bRefresh").onclick = () => { $("#bRefresh").animate([{ transform: "rotate(0)" }, { transform: "rotate(360deg)" }], 600); loadList(true); };
 $("#bSearch").onclick = () => { const b = $("#sbar"); b.classList.toggle("on"); if (b.classList.contains("on")) $("#q").focus(); else { searchQ = ""; $("#q").value = ""; renderList(true); } };
@@ -481,6 +553,7 @@ document.addEventListener("keydown", e => {
 document.addEventListener("touchstart", () => { if (tvMode){ tvMode = false; markSel(true); } }, { passive: true });
 
 /* ---------- start ---------- */
+setTheme(theme);
 setScreen("idle");
 setVol(volStep);
 if (!APP){

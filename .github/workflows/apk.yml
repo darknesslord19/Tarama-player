@@ -42,20 +42,20 @@ jobs:
 
       - name: APK'yı hazırla
         run: |
-          cp android/app/build/outputs/apk/release/app-release.apk PuuTV.apk
-          ls -la PuuTV.apk
+          cp android/app/build/outputs/apk/release/app-release.apk DarknesTv.apk
+          ls -la DarknesTv.apk
 
       - uses: actions/upload-artifact@v4
         with:
-          name: PuuTV-apk
-          path: PuuTV.apk
+          name: DarknesTv.apk
+          path: DarknesTv.apk
 
       - name: Sürüm sayfasına yükle
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release delete apk --yes --cleanup-tag || true
-          gh release create apk PuuTV.apk \
-            --title "Puu TV (son sürüm #${{ github.run_number }})" \
-            --notes "Telefon ve Android TV için. İndir: PuuTV.apk → kur (bilinmeyen kaynaklara izin ver)." \
+          gh release create apk DarknesTv.apk \
+            --title "DarknesTv (son sürüm #${{ github.run_number }})" \
+            --notes "Telefon ve Android TV için. İndir: DarknesTv.apk → kur (bilinmeyen kaynaklara izin ver)." \
             --target "${{ github.sha }}"
