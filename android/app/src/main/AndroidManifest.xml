@@ -9,8 +9,8 @@
 
     <application
         android:label="DarknesTv"
-        android:icon="@drawable/ic_launcher"
-        android:roundIcon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:banner="@drawable/banner"
         android:usesCleartextTraffic="true"
         android:hardwareAccelerated="true"

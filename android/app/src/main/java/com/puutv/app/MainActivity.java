@@ -1,6 +1,16 @@
 package com.puutv.app;
 
 import android.app.Activity;
+import android.app.UiModeManager;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
+import android.graphics.Insets;
+import android.os.Build;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.Window;
+import android.view.WindowInsets;
+import android.view.WindowInsetsController;
 import android.graphics.Color;
 import android.graphics.Outline;
 import android.net.Uri;
@@ -25,6 +35,7 @@ import androidx.media3.common.util.UnstableApi;
 import androidx.media3.datasource.DefaultHttpDataSource;
 import androidx.media3.exoplayer.ExoPlayer;
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory;
+import androidx.media3.ui.AspectRatioFrameLayout;
 import androidx.media3.ui.PlayerView;
 
 import org.json.JSONObject;
@@ -37,6 +48,9 @@ public class MainActivity extends Activity {
     private static final String DEFAULT_UA =
             "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36";
 
+    private FrameLayout root;
+    private int aspect = 1;
+    private static final int[] MODES = {AspectRatioFrameLayout.RESIZE_MODE_FIT, AspectRatioFrameLayout.RESIZE_MODE_ZOOM, AspectRatioFrameLayout.RESIZE_MODE_FILL};
     private WebView web;
     private PlayerView pv;
     private ExoPlayer player;
@@ -51,7 +65,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
+        root = findViewById(R.id.root);
         web = findViewById(R.id.web);
+        setupEdgeToEdge();
         pv = findViewById(R.id.player);
 
         WebSettings s = web.getSettings();
@@ -78,7 +94,26 @@ public class MainActivity extends Activity {
             }
         });
         pv.setClipToOutline(true);
-        pv.setOnClickListener(v -> js("onNativeTap()"));
+        GestureDetector gd = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
+            @Override
+            public boolean onDown(MotionEvent e) { return true; }
+
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                js("onNativeTap()");
+                return true;
+            }
+
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                if (full) js("cycleAspect()");
+                return true;
+            }
+        });
+        pv.setOnTouchListener((v, e) -> {
+            gd.onTouchEvent(e);
+            return true;
+        });
 
         player.addListener(new Player.Listener() {
             @Override
@@ -153,15 +188,69 @@ public class MainActivity extends Activity {
             lp.topMargin = Math.round(ry * d);
         }
         pv.setLayoutParams(lp);
+        pv.setResizeMode(full ? MODES[aspect] : AspectRatioFrameLayout.RESIZE_MODE_FIT);
         pv.invalidateOutline();
+    }
+
+    private static final int BASE_FLAGS = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+
+    /** Her zaman kenardan kenara çiz; normal modda çubuk boşluklarını kendimiz bırakalım. */
+    @SuppressWarnings("deprecation")
+    private void setupEdgeToEdge() {
+        Window w = getWindow();
+        if (Build.VERSION.SDK_INT >= 30) w.setDecorFitsSystemWindows(false);
+        else w.getDecorView().setSystemUiVisibility(BASE_FLAGS);
+        root.setOnApplyWindowInsetsListener((v, insets) -> {
+            if (full) {
+                v.setPadding(0, 0, 0, 0);
+            } else if (Build.VERSION.SDK_INT >= 30) {
+                Insets i = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
+                v.setPadding(i.left, i.top, i.right, i.bottom);
+            } else {
+                v.setPadding(insets.getSystemWindowInsetLeft(), insets.getSystemWindowInsetTop(),
+                        insets.getSystemWindowInsetRight(), insets.getSystemWindowInsetBottom());
+            }
+            return insets;
+        });
+    }
+
+    private boolean isTv() {
+        UiModeManager um = (UiModeManager) getSystemService(UI_MODE_SERVICE);
+        return um != null && um.getCurrentModeType() == Configuration.UI_MODE_TYPE_TELEVISION;
     }
 
     @SuppressWarnings("deprecation")
     private void immersive(boolean on) {
-        View decor = getWindow().getDecorView();
-        decor.setSystemUiVisibility(on
-                ? (View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)
-                : 0);
+        Window w = getWindow();
+        if (Build.VERSION.SDK_INT >= 28) {
+            WindowManager.LayoutParams a = w.getAttributes();
+            a.layoutInDisplayCutoutMode = on
+                    ? WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+                    : WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT;
+            w.setAttributes(a);
+        }
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowInsetsController c = w.getInsetsController();
+            if (c != null) {
+                int types = WindowInsets.Type.statusBars() | WindowInsets.Type.navigationBars();
+                if (on) {
+                    c.setSystemBarsBehavior(WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+                    c.hide(types);
+                } else {
+                    c.show(types);
+                }
+            }
+        } else {
+            w.getDecorView().setSystemUiVisibility(on
+                    ? BASE_FLAGS | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                    : BASE_FLAGS);
+        }
+        if (!isTv()) {
+            setRequestedOrientation(on ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE
+                    : ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        }
+        root.requestApplyInsets();
     }
 
     @Override
@@ -253,6 +342,14 @@ public class MainActivity extends Activity {
             runOnUiThread(() -> {
                 full = on;
                 immersive(on);
+                layoutPlayer();
+            });
+        }
+
+        @JavascriptInterface
+        public void setAspect(int m) {
+            runOnUiThread(() -> {
+                aspect = Math.max(0, Math.min(2, m));
                 layoutPlayer();
             });
         }
