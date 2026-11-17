@@ -1,0 +1,239 @@
+{
+  "name": "Örnek Katalog",
+  "version": 1,
+  "categories": [
+    {
+      "title": "Filmler",
+      "items": [
+        {
+          "id": "bbb",
+          "title": "Big Buck Bunny",
+          "year": 2008,
+          "duration": "10 dk",
+          "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+          "description": "Blender Vakfı'nın açık lisanslı kısa filmi: iri yarı bir tavşan, ormandaki zorba kemirgenlerden intikam alır.",
+          "sources": [
+            {
+              "name": "HLS (çoklu kalite)",
+              "type": "hls",
+              "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+            },
+            {
+              "name": "MP4",
+              "type": "mp4",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            }
+          ]
+        },
+        {
+          "id": "tos",
+          "title": "Tears of Steel",
+          "year": 2012,
+          "duration": "12 dk",
+          "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+          "description": "Amsterdam'da geçen, robotlara karşı geçmişi kurtarmaya çalışan bir ekibin bilimkurgu kısa filmi (Blender, açık lisans).",
+          "sources": [
+            {
+              "name": "HLS",
+              "type": "hls",
+              "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+            },
+            {
+              "name": "MP4",
+              "type": "mp4",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+            }
+          ]
+        },
+        {
+          "id": "sintel",
+          "title": "Sintel",
+          "year": 2010,
+          "duration": "15 dk",
+          "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+          "description": "Kaybolan yavru ejderhasını arayan genç bir kızın yolculuğu. Blender Vakfı'nın açık lisanslı filmi.",
+          "sources": [
+            {
+              "name": "MP4",
+              "type": "mp4",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+            }
+          ]
+        },
+        {
+          "id": "ed",
+          "title": "Elephants Dream",
+          "year": 2006,
+          "duration": "11 dk",
+          "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+          "description": "Tuhaf bir makine dünyasında geçen, tamamen açık kaynak araçlarla üretilmiş ilk Blender filmi.",
+          "sources": [
+            {
+              "name": "MP4",
+              "type": "mp4",
+              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diziler",
+      "items": [
+        {
+          "id": "klipler",
+          "title": "Örnek Klipler",
+          "type": "series",
+          "year": 2014,
+          "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
+          "description": "Dizi yapısını göstermek için kısa örnek videolardan oluşan iki sezonluk bir liste.",
+          "seasons": [
+            {
+              "season": 1,
+              "title": "Sezon 1",
+              "episodes": [
+                {
+                  "episode": 1,
+                  "title": "Blazes",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 2,
+                  "title": "Escapes",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 3,
+                  "title": "Fun",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 4,
+                  "title": "Joyrides",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 5,
+                  "title": "Meltdowns",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "season": 2,
+              "title": "Sezon 2",
+              "episodes": [
+                {
+                  "episode": 1,
+                  "title": "Subaru Outback",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 2,
+                  "title": "Volkswagen GTI",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 3,
+                  "title": "Bullrun",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+                    }
+                  ]
+                },
+                {
+                  "episode": 4,
+                  "title": "What Car Can You Get For A Grand",
+                  "sources": [
+                    {
+                      "name": "MP4",
+                      "type": "mp4",
+                      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Test Yayınları",
+      "items": [
+        {
+          "id": "bipbop",
+          "title": "Apple BipBop (HLS)",
+          "year": 2017,
+          "poster": "",
+          "description": "Apple'ın HLS test akışı: farklı kalite seviyeleri, ses ve altyazı izleri içerir. Oynatıcının kalite ve altyazı menüsünü denemek için.",
+          "sources": [
+            {
+              "name": "HLS fMP4",
+              "type": "hls",
+              "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8"
+            }
+          ]
+        },
+        {
+          "id": "live",
+          "title": "Canlı Test Akışı",
+          "type": "live",
+          "poster": "",
+          "sources": [
+            {
+              "name": "Canlı",
+              "type": "hls",
+              "url": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

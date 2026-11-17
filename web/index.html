@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DarkStream</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <button class="logo" id="homeBtn" aria-label="Ana sayfa">Dark<span>Stream</span></button>
+    <input id="search" type="search" placeholder="Ara…" autocomplete="off">
+    <button class="icon" id="settingsBtn" aria-label="Ayarlar">⚙</button>
+  </header>
+
+  <main id="main"><div class="loading">Yükleniyor…</div></main>
+
+  <!-- Detay / ayarlar / tümü katmanları buraya eklenir -->
+  <div id="layers"></div>
+
+  <!-- Tarayıcı modunda oynatıcı (uygulamada yerel oynatıcı kullanılır) -->
+  <div id="webPlayer" class="layer player hidden">
+    <video id="video" controls playsinline></video>
+    <button class="close" id="closePlayer">✕</button>
+    <div id="playerTitle" class="ptitle"></div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
