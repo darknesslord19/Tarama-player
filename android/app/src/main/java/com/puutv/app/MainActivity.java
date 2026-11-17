@@ -2,6 +2,21 @@ package com.puutv.app;
 
 import android.app.Activity;
 import android.app.UiModeManager;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.util.Base64;
+
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
+import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+
+import java.io.ByteArrayOutputStream;
+import java.security.SecureRandom;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicReference;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Insets;
@@ -49,6 +64,10 @@ public class MainActivity extends Activity {
             "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36";
 
     private FrameLayout root;
+    private RemoteServer server;
+    private int serverPort = 0;
+    private String remoteToken;
+    private boolean overlay = false;
     private int aspect = 1;
     private static final int[] MODES = {AspectRatioFrameLayout.RESIZE_MODE_FIT, AspectRatioFrameLayout.RESIZE_MODE_ZOOM, AspectRatioFrameLayout.RESIZE_MODE_FILL};
     private WebView web;
@@ -119,7 +138,7 @@ public class MainActivity extends Activity {
             @Override
             public void onPlaybackStateChanged(int state) {
                 if (state == Player.STATE_READY) {
-                    pv.setVisibility(View.VISIBLE);
+                    if (!overlay) pv.setVisibility(View.VISIBLE);
                     js("onNativeState('ready')");
                 } else if (state == Player.STATE_BUFFERING) {
                     js("onNativeState('buffering')");
@@ -140,6 +159,77 @@ public class MainActivity extends Activity {
         });
 
         web.loadUrl("file:///android_asset/index.html");
+        startRemote();
+    }
+
+    /* ---------- telefon kumandası (yerel sunucu) ---------- */
+    private void startRemote() {
+        SharedPreferences sp = getSharedPreferences("darknestv", MODE_PRIVATE);
+        remoteToken = sp.getString("remote_token", null);
+        if (remoteToken == null) {
+            String abc = "abcdefghjkmnpqrstuvwxyz23456789";
+            SecureRandom r = new SecureRandom();
+            StringBuilder b = new StringBuilder();
+            for (int i = 0; i < 10; i++) b.append(abc.charAt(r.nextInt(abc.length())));
+            remoteToken = b.toString();
+            sp.edit().putString("remote_token", remoteToken).apply();
+        }
+        RemoteServer.Host host = new RemoteServer.Host() {
+            @Override
+            public void fire(String code) { js(code); }
+
+            @Override
+            public String eval(String expr) {
+                CountDownLatch latch = new CountDownLatch(1);
+                AtomicReference<String> out = new AtomicReference<>();
+                web.post(() -> web.evaluateJavascript(expr, v -> { out.set(v); latch.countDown(); }));
+                try { latch.await(3, TimeUnit.SECONDS); } catch (InterruptedException ignored) { }
+                return out.get();
+            }
+
+            @Override
+            public void onNewRemote(String ip) { js("onRemoteConnected()"); }
+        };
+        for (int port = 8642; port < 8652; port++) {
+            try {
+                RemoteServer s = new RemoteServer(this, port, remoteToken, host);
+                s.start(RemoteServer.SOCKET_READ_TIMEOUT, true);
+                server = s;
+                serverPort = port;
+                return;
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    private String remoteUrl() {
+        String ip = RemoteServer.localIp();
+        if (ip == null || serverPort == 0) return null;
+        return "http://" + ip + ":" + serverPort + "/?t=" + remoteToken;
+    }
+
+    private static String qrDataUrl(String text) {
+        try {
+            Map<EncodeHintType, Object> hints = new HashMap<>();
+            hints.put(EncodeHintType.MARGIN, 2);
+            hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
+            BitMatrix m = new QRCodeWriter().encode(text, BarcodeFormat.QR_CODE, 0, 0, hints);
+            int w = m.getWidth(), h = m.getHeight(), scale = Math.max(1, 480 / w);
+            Bitmap bmp = Bitmap.createBitmap(w * scale, h * scale, Bitmap.Config.RGB_565);
+            int[] row = new int[w * scale];
+            for (int y = 0; y < h; y++) {
+                for (int x = 0; x < w; x++) {
+                    int c = m.get(x, y) ? Color.BLACK : Color.WHITE;
+                    for (int i = 0; i < scale; i++) row[x * scale + i] = c;
+                }
+                for (int i = 0; i < scale; i++) bmp.setPixels(row, 0, w * scale, 0, y * scale + i, w * scale, 1);
+            }
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            bmp.compress(Bitmap.CompressFormat.PNG, 100, out);
+            return "data:image/png;base64," + Base64.encodeToString(out.toByteArray(), Base64.NO_WRAP);
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     private void js(String code) {
@@ -301,6 +391,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        if (server != null) server.stop();
         player.release();
         web.destroy();
         super.onDestroy();
@@ -343,6 +434,28 @@ public class MainActivity extends Activity {
                 full = on;
                 immersive(on);
                 layoutPlayer();
+            });
+        }
+
+        @JavascriptInterface
+        public String getRemoteInfo() {
+            try {
+                JSONObject o = new JSONObject();
+                String url = remoteUrl();
+                o.put("url", url == null ? JSONObject.NULL : url);
+                o.put("qr", url == null ? JSONObject.NULL : qrDataUrl(url));
+                return o.toString();
+            } catch (Exception e) {
+                return "{}";
+            }
+        }
+
+        @JavascriptInterface
+        public void setOverlay(boolean on) {
+            runOnUiThread(() -> {
+                overlay = on;
+                if (on) pv.setVisibility(View.INVISIBLE);
+                else if (curUrl != null && player.getPlaybackState() == Player.STATE_READY) pv.setVisibility(View.VISIBLE);
             });
         }
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#0c0c0f">
+<title>DarknesTv Kumanda</title>
+<style>
+:root{--bg:#0c0c0f;--card:#17171c;--card2:#202027;--line:#26262e;--txt:#f4f1ec;--mut:#8a8a94;--red:#e53935}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;user-select:none;-webkit-user-select:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.wrap{max-width:460px;margin:auto;padding:14px 16px 40px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+header svg{width:30px;height:32px}
+header b{font-size:22px;font-weight:900;letter-spacing:-.3px}
+header b em{font-style:normal;color:var(--red)}
+header small{color:var(--mut);font-weight:700;margin-left:2px}
+.dot{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mut);font-weight:700}
+.dot i{width:9px;height:9px;border-radius:50%;background:#555}
+.dot.on i{background:#3fb950;box-shadow:0 0 8px #3fb950}
+.dot.off i{background:var(--red)}
+.now{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:14px}
+.now .no{min-width:54px;height:54px;border-radius:14px;background:#2a1214;color:var(--red);display:grid;place-items:center;font-weight:900;font-size:20px}
+.now .t{min-width:0;flex:1}
+.now .nm{font-weight:800;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.now .st{color:var(--mut);font-size:13px;margin-top:2px}
+.pad{position:relative;width:min(78vw,290px);aspect-ratio:1;margin:22px auto 18px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#22222a,#141418);box-shadow:0 14px 34px #000c,inset 0 1px 0 #ffffff14}
+.pad button{position:absolute;display:grid;place-items:center}
+.pad .a{width:34%;height:34%}
+.pad .a svg{width:30px;height:30px;opacity:.9}
+.pad .u{left:33%;top:0}.pad .d{left:33%;bottom:0}.pad .l{left:0;top:33%}.pad .r{right:0;top:33%}
+.pad .ok{left:30%;top:30%;width:40%;height:40%;border-radius:50%;background:var(--red);font-weight:900;font-size:20px;letter-spacing:1px;box-shadow:0 6px 18px #e5393566}
+.pad button:active{transform:scale(.92)}
+.row{display:grid;gap:10px;margin-bottom:10px}
+.r3{grid-template-columns:repeat(3,1fr)}.r4{grid-template-columns:repeat(4,1fr)}
+.b{height:56px;border-radius:14px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-weight:800;font-size:12px;color:#c9c9d1}
+.b svg{width:20px;height:20px}
+.b:active{background:var(--card2);transform:scale(.97)}
+.b.big{font-size:17px;color:#fff}
+h3{margin:22px 2px 10px;font-size:13px;letter-spacing:2px;color:var(--mut)}
+input{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--txt);font:inherit;font-size:16px;padding:12px 14px;outline:none}
+input:focus{border-color:var(--red)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--card);border-radius:999px;padding:8px 14px;font-weight:800;font-size:13px;color:#b9b9c2}
+.chip.on{background:var(--red);color:#fff}
+.list{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.ch{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;text-align:left;width:100%}
+.ch .n{width:34px;color:#66666f;font-weight:800;font-size:14px;text-align:center}
+.ch .lg{width:48px;height:34px;border-radius:8px;background:#23232a;display:grid;place-items:center;overflow:hidden;font-weight:900;font-size:12px;flex:none}
+.ch .lg img{max-width:90%;max-height:85%;object-fit:contain}
+.ch .nm{flex:1;min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ch.on{border-color:var(--red);background:#24121399}
+.ch.on .n{color:var(--red)}
+.empty{color:var(--mut);text-align:center;padding:24px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#000e;border:1px solid var(--line);padding:10px 16px;border-radius:12px;font-weight:700;opacity:0;transition:.2s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="240 190 610 645"><path fill="#f4f1ec" fill-rule="evenodd" d="M284,212H520A300,300 0 0 1 520,812H284A22,22 0 0 1 262,790V234A22,22 0 0 1 284,212ZM380,330V694H520A182,182 0 0 0 520,330Z"/><path fill="#e53935" stroke="#e53935" stroke-width="34" stroke-linejoin="round" d="M488,424V600L647,512Z"/></svg>
+    <b>Darknes<em>Tv</em></b><small>Kumanda</small>
+    <div class="dot" id="dot"><i></i><span>Bağlanıyor</span></div>
+  </header>
+
+  <div class="now"><div class="no" id="nNo">–</div><div class="t"><div class="nm" id="nName">Kanal seçilmedi</div><div class="st" id="nSt">TV'de bir kanal aç ya da aşağıdan seç</div></div></div>
+
+  <div class="pad">
+    <button class="a u" data-k="up"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 6l7 9H5z"/></svg></button>
+    <button class="a l" data-k="left"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 12l9-7v14z"/></svg></button>
+    <button class="ok" data-k="ok">OK</button>
+    <button class="a r" data-k="right"><svg viewBox="0 0 24 24" fill="#fff"><path d="M18 12l-9 7V5z"/></svg></button>
+    <button class="a d" data-k="down"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 18l-7-9h14z"/></svg></button>
+  </div>
+
+  <div class="row r3">
+    <button class="b" data-k="back"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg>Geri</button>
+    <button class="b" data-c="full"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Tam ekran</button>
+    <button class="b" data-c="theme"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="#fff"/></svg>Tema</button>
+  </div>
+  <div class="row r4">
+    <button class="b big" data-k="chdown">CH −</button>
+    <button class="b big" data-k="chup">CH +</button>
+    <button class="b big" data-c="voldown">Ses −</button>
+    <button class="b big" data-c="volup">Ses +</button>
+  </div>
+  <div class="row r3">
+    <button class="b" data-c="src"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>Kaynak değiştir</button>
+    <button class="b" data-c="aspect"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 10v4M16 10v4"/></svg>Görüntü</button>
+    <button class="b" data-c="fav"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1L3.2 9.4l6.1-.8z"/></svg>Favori</button>
+  </div>
+
+  <h3>KANALLAR</h3>
+  <input id="q" type="search" placeholder="Kanal ara…" autocomplete="off">
+  <div class="chips" id="chips"></div>
+  <div class="list" id="list"><div class="empty">Kanallar yükleniyor…</div></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+"use strict";
+var T = new URLSearchParams(location.search).get("t") || "";
+var CH = [], GROUPS = [], grp = "Tümü", q = "", curNo = 0, fails = 0;
+function $(s){ return document.querySelector(s); }
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+function api(path, params){
+  var u = path + "?t=" + encodeURIComponent(T);
+  for (var k in (params || {})) u += "&" + k + "=" + encodeURIComponent(params[k]);
+  return fetch(u, { cache: "no-store" }).then(function(r){
+    if (r.status === 403) throw new Error("yetki");
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  });
+}
+function setConn(ok, msg){
+  var d = $("#dot"); d.className = "dot " + (ok ? "on" : "off"); d.querySelector("span").textContent = msg || (ok ? "Bağlı" : "Bağlantı yok");
+}
+var tt; function toast(t){ var el = $("#toast"); el.textContent = t; el.classList.add("on"); clearTimeout(tt); tt = setTimeout(function(){ el.classList.remove("on"); }, 1600); }
+function buzz(){ try{ navigator.vibrate && navigator.vibrate(12); }catch(e){} }
+function send(path, params){
+  buzz();
+  return api(path, params).then(function(){ setConn(true); setTimeout(poll, 250); })
+    .catch(function(e){ setConn(false, e.message === "yetki" ? "QR'ı yeniden okut" : "Bağlantı yok"); toast("TV'ye ulaşılamadı"); });
+}
+document.addEventListener("click", function(e){
+  var b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.k) send("/api/key", { k: b.dataset.k });
+  else if (b.dataset.c) send("/api/cmd", { c: b.dataset.c });
+  else if (b.dataset.no){ send("/api/play", { no: b.dataset.no }); toast(b.querySelector(".nm").textContent); }
+  else if (b.dataset.g){ grp = b.dataset.g; renderChips(); renderList(); }
+});
+var STATES = { play: "Yayında", load: "Bağlanıyor…", nosig: "Sinyal yok", idle: "Bekliyor" };
+function poll(){
+  api("/api/state").then(function(s){
+    fails = 0; setConn(true);
+    curNo = s.no || 0;
+    $("#nNo").textContent = s.no ? s.no : "–";
+    $("#nName").textContent = s.name || "Kanal seçilmedi";
+    $("#nSt").textContent = s.no ? (STATES[s.state] || "") + " · kaynak " + s.src + "/" + s.srcs + (s.full ? " · tam ekran" : "") : "TV'de bir kanal aç ya da aşağıdan seç";
+    [].forEach.call(document.querySelectorAll(".ch"), function(b){ b.classList.toggle("on", +b.dataset.no === curNo); });
+  }).catch(function(e){ if (++fails > 1) setConn(false, e.message === "yetki" ? "QR'ı yeniden okut" : "Bağlantı yok"); });
+}
+function loadChannels(){
+  api("/api/channels").then(function(list){
+    CH = list || []; GROUPS = ["Tümü"];
+    CH.forEach(function(c){ if (GROUPS.indexOf(c[2]) < 0) GROUPS.push(c[2]); });
+    renderChips(); renderList();
+  }).catch(function(){ $("#list").innerHTML = '<div class="empty">Kanal listesi alınamadı. TV\'de DarknesTv açık mı?</div>'; setTimeout(loadChannels, 3000); });
+}
+function norm(s){ return s.toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ı/g, "i"); }
+function renderChips(){
+  $("#chips").innerHTML = GROUPS.map(function(g){ return '<button class="chip' + (g === grp ? " on" : "") + '" data-g="' + esc(g) + '">' + esc(g) + "</button>"; }).join("");
+}
+function renderList(){
+  var nq = norm(q);
+  var v = CH.filter(function(c){ return q ? norm(c[1]).indexOf(nq) >= 0 : (grp === "Tümü" || c[2] === grp); });
+  if (!v.length){ $("#list").innerHTML = '<div class="empty">Kanal bulunamadı</div>'; return; }
+  $("#list").innerHTML = v.slice(0, 400).map(function(c){
+    var ini = esc(c[1].replace(/[^A-Za-z0-9ÇĞİÖŞÜçğıöşü ]/g, "").split(/\s+/).filter(Boolean).map(function(w){ return w[0]; }).join("").slice(0, 2).toUpperCase());
+    return '<button class="ch' + (c[0] === curNo ? " on" : "") + '" data-no="' + c[0] + '"><span class="n">' + c[0] + '</span><span class="lg">' +
+      (c[3] ? '<img loading="lazy" src="' + esc(c[3]) + '" alt="" onerror="this.parentNode.textContent=\'' + ini + '\'">' : ini) +
+      '</span><span class="nm">' + esc(c[1]) + "</span></button>";
+  }).join("");
+}
+$("#q").addEventListener("input", function(e){ q = e.target.value.trim(); renderList(); });
+if (!T) setConn(false, "QR'ı yeniden okut");
+poll(); loadChannels(); setInterval(poll, 2500);
+</script>
+</body>
+</html>
