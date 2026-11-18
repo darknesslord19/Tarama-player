@@ -1,16 +1,15 @@
 {
- "updated": "2026-11-18T07:52:50Z",
+ "updated": "2026-11-18T20:49:49Z",
  "sources": {
   "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tr.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 214,
    "alive": 4,
    "alive_hist": [
-    5,
     3,
     4,
     5,
@@ -19,15 +18,16 @@
     4,
     4,
     4,
+    4,
     4
    ],
    "kind": "curated",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/arslanavdo355-sys/Benim-iptv/main/tr-de-ku.m3u": {
-   "runs": 28,
+   "runs": 29,
    "fetch_ok": 7,
-   "fails_row": 21,
+   "fails_row": 22,
    "zero_row": 0,
    "q_until": 0,
    "found": 571,
@@ -42,7 +42,7 @@
     3
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/arslanavdo355-sys/Benim-iptv/main/tr-de-ku-hd.m3u": {
    "runs": 7,
@@ -57,8 +57,8 @@
    "last_run": 1794353438
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/cocuk.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -66,11 +66,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/cocuk.m3u8": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -78,18 +78,17 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/kanallar.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 439,
-   "alive": 241,
+   "alive": 234,
    "alive_hist": [
-    227,
     240,
     234,
     235,
@@ -98,14 +97,15 @@
     232,
     238,
     239,
-    241
+    241,
+    234
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/kanallar.m3u8": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -113,11 +113,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/top50.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -131,11 +131,11 @@
     3
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/main/top50.m3u8": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -143,11 +143,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/alpayaydemir-ui/tv-kanal-listesi/main/turkiye-ucretsiz.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -157,20 +157,20 @@
     0,
     0,
     0,
-    0,
     4,
     4,
+    1,
     1,
     1,
     1,
     1
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/Hamsidenoyunlar/Turkiye-IPTV/main/Turkiye_Duzenli_IPTV_Kasim_2026.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -189,47 +189,47 @@
     3
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/ilyswch/IPTV-TR/main/atv.m3u8": {
-   "runs": 28,
+   "runs": 29,
    "fetch_ok": 0,
-   "fails_row": 28,
+   "fails_row": 29,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/ilyswch/IPTV-TR/main/box.m3u": {
-   "runs": 28,
+   "runs": 29,
    "fetch_ok": 0,
-   "fails_row": 28,
+   "fails_row": 29,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/ilyswch/IPTV-TR/main/box2.m3u": {
-   "runs": 28,
+   "runs": 29,
    "fetch_ok": 0,
-   "fails_row": 28,
+   "fails_row": 29,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/omerdenizhan/IPTV-M3U/main/m3u/turkiye.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 21,
    "q_until": 1794604463,
@@ -248,18 +248,17 @@
     0
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/omerdenizhan/IPTV-M3U/main/m3u/turkiye-iptv-org.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 288,
    "alive": 135,
    "alive_hist": [
-    133,
     137,
     136,
     135,
@@ -268,21 +267,21 @@
     136,
     135,
     136,
+    135,
     135
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/eakcabag/canli-tv/main/spor.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 54,
    "alive": 4,
    "alive_hist": [
-    4,
     6,
     4,
     4,
@@ -291,14 +290,15 @@
     3,
     3,
     4,
+    4,
     4
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/eakcabag/canli-tv/main/tv.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -308,18 +308,17 @@
     14
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/eakcabag/canli-tv/main/ulusal.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 75,
-   "alive": 15,
+   "alive": 13,
    "alive_hist": [
-    15,
     17,
     15,
     16,
@@ -328,10 +327,11 @@
     15,
     14,
     14,
-    15
+    15,
+    13
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/tpm404/tek-cati-tv/main/channels.m3u": {
    "runs": 6,
@@ -42926,8 +42926,8 @@
    "last_run": 1794331308
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/all.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42938,11 +42938,11 @@
     4
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/animation.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42950,11 +42950,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/animation_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42962,11 +42962,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/animation_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42974,11 +42974,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/business.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42986,11 +42986,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/business_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -42998,11 +42998,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/business_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43010,11 +43010,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/culture.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43022,11 +43022,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/culture_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43034,11 +43034,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/culture_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43046,11 +43046,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/documentary.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43058,11 +43058,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/documentary_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43070,11 +43070,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/documentary_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43082,11 +43082,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/education.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43094,11 +43094,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/education_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43106,11 +43106,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/education_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43118,11 +43118,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/entertainment.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43130,11 +43130,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/entertainment_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43142,11 +43142,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/entertainment_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43154,11 +43154,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/general.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43166,11 +43166,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/general_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43178,11 +43178,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/general_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43190,23 +43190,23 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 187,
+   "found": 188,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/kids.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43214,11 +43214,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/kids_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43226,11 +43226,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/kids_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43238,11 +43238,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/lifestyle.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43250,11 +43250,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/lifestyle_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43262,19 +43262,19 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/lifestyle_sd.m3u": {
-   "runs": 28,
+   "runs": 29,
    "fetch_ok": 0,
-   "fails_row": 28,
+   "fails_row": 29,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/movies.m3u": {
    "runs": 2,
@@ -43313,8 +43313,8 @@
    "last_run": 1794335156
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/music.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43322,11 +43322,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/music_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43334,11 +43334,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/music_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43346,11 +43346,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/news.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43358,11 +43358,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/news_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43370,11 +43370,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/news_sd.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43382,11 +43382,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/outdoor.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43394,11 +43394,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/outdoor_hd.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43406,7 +43406,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/outdoor_sd.m3u": {
    "runs": 1,
@@ -43541,8 +43541,8 @@
    "last_run": 1794331309
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/sports.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -43550,31 +43550,31 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/sports_hd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 6,
+   "found": 7,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/sports_sd.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 5,
+   "found": 4,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/main/playlists/tur/travel.m3u": {
    "runs": 1,
@@ -47833,32 +47833,32 @@
    "last_run": 1794331312
   },
   "https://raw.githubusercontent.com/FeridunN12/ibo-iptv-playlist/main/combined.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 469,
+   "found": 449,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/FeridunN12/ibo-iptv-playlist/main/docs/combined.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 469,
+   "found": 449,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/McRizzz/German-Turkish-iptv-playlist/main/german-turkish-channels.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -47869,18 +47869,17 @@
     149
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/emrecemal/my-iptv-playlist/main/playlist.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 173,
    "alive": 11,
    "alive_hist": [
-    11,
     11,
     10,
     13,
@@ -47889,10 +47888,11 @@
     10,
     11,
     11,
+    11,
     11
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/K3rimoff/IPTV/main/Aze.m3u": {
    "runs": 7,
@@ -47914,13 +47914,13 @@
    "last_run": 1794902682
   },
   "https://raw.githubusercontent.com/K3rimoff/IPTV/main/Tur.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 10,
-   "alive": 2,
+   "alive": 3,
    "alive_hist": [
     3,
     3,
@@ -47930,15 +47930,15 @@
     3,
     3,
     3,
-    3,
-    2
+    2,
+    3
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/YananHelena/iptvson/main/playlist.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -47946,11 +47946,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/merabamayk/turkey-iptv/main/turkey.m3u": {
-   "runs": 28,
-   "fetch_ok": 28,
+   "runs": 29,
+   "fetch_ok": 29,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -47961,7 +47961,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/550016fcc816606e962e0f8a542631e089aa7a95/lists/video/sources/www-trt1-com-tr/arsiv/1-gun-kala.m3u": {
    "runs": 1,
@@ -49124,15 +49124,14 @@
    "last_run": 1794331313
   },
   "https://raw.githubusercontent.com/allthethingsyouhavechased-ui/tv-liste/main/k.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 41,
    "alive": 15,
    "alive_hist": [
-    15,
     17,
     16,
     18,
@@ -49141,22 +49140,22 @@
     16,
     16,
     15,
+    15,
     15
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/lensphotostudio/turk-iptv/main/kanallar.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 68,
-   "alive": 8,
+   "alive": 6,
    "alive_hist": [
     7,
-    7,
     6,
     7,
     7,
@@ -49164,14 +49163,15 @@
     6,
     6,
     6,
-    8
+    8,
+    6
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/lensphotostudio/turk-iptv/main/filmler.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49179,18 +49179,17 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/qazim/IPTV/main/tr.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 27,
-   "alive": 10,
+   "alive": 9,
    "alive_hist": [
-    10,
     10,
     10,
     10,
@@ -49199,14 +49198,15 @@
     10,
     9,
     10,
-    10
+    10,
+    9
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/qazim/IPTV/main/canlitv.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49219,17 +49219,17 @@
     3,
     3,
     3,
-    3,
     2,
+    3,
     3,
     3
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/qazim/IPTV/main/TurkAzeri.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49237,11 +49237,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/qazim/IPTV/main/all_channels.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49260,11 +49260,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/qazim/IPTV/main/region.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49272,18 +49272,17 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/Yusufdkci/iptv/main/liste.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 989,
-   "alive": 41,
+   "alive": 39,
    "alive_hist": [
-    41,
     41,
     35,
     40,
@@ -49292,10 +49291,11 @@
     43,
     41,
     40,
-    41
+    41,
+    39
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/tr.m3u": {
    "runs": 1,
@@ -49312,8 +49312,8 @@
    "last_run": 1794335156
   },
   "https://raw.githubusercontent.com/batukocakx/turk-kanallari/main/alman-kanallari.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49323,11 +49323,11 @@
     3
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/batukocakx/turk-kanallari/main/kanallar.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49336,9 +49336,9 @@
    "alive_hist": [
     1,
     1,
-    1,
     3,
     2,
+    1,
     1,
     1,
     1,
@@ -49346,11 +49346,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/ahingunes-creator/ruhatv/main/ruhatv.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49369,11 +49369,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/JulioCesarXY/EPG-TracePlus/main/canais_trace.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49383,11 +49383,11 @@
     26
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Jorji49/streamtop/main/tests/fixtures/hls_aes128.m3u8": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49395,23 +49395,23 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Jorji49/streamtop/main/tests/fixtures/hls_master.m3u8": {
-   "runs": 27,
+   "runs": 28,
    "fetch_ok": 0,
-   "fails_row": 27,
+   "fails_row": 28,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Jorji49/streamtop/main/tests/fixtures/hls_media.m3u8": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49419,11 +49419,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Jorji49/streamtop/main/tests/fixtures/iptv_channels.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -49433,11 +49433,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Jorji49/streamtop/main/tests/fixtures/ll_hls_media.m3u8": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49445,11 +49445,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/stagh345/iptv-az-tr-ru/main/docs/index.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49458,21 +49458,21 @@
    "alive_hist": [
     9,
     9,
-    9,
     10,
     9,
     9,
     9,
     14,
     13,
+    13,
     13
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/stagh345/iptv-az-tr-ru/main/docs/index.m3u8": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49480,11 +49480,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/stagh345/iptv-az-tr-ru/main/docs/test.m3u8": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49492,11 +49492,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/armendzekjiri/TronIPTV-Mac/feat/macos-app/docs/demo-playlist.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -49506,7 +49506,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/RzaNagizade/az-tr-iptv/main/az-tr.m3u": {
    "runs": 9,
@@ -49528,8 +49528,8 @@
    "last_run": 1794949415
   },
   "https://raw.githubusercontent.com/RzaNagizade/az-tr-iptv/main/custom.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49537,11 +49537,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Black-024/Transmisor-IPTV-ESP32/main/data/playlist.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -49551,11 +49551,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Leox1x/tr-iptv/main/tr-iptv-playlist.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 5,
    "q_until": 1795028234,
@@ -49569,23 +49569,23 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794768695
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/Leox1x/tr-iptv/main/ByteFixRepairs2026.m3u": {
-   "runs": 27,
+   "runs": 28,
    "fetch_ok": 0,
-   "fails_row": 27,
+   "fails_row": 28,
    "zero_row": 0,
    "q_until": 0,
    "found": 0,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/ridvanseref37/tivi-rs-playlist/main/Tivi_RS_M3U_Listesi.m3u": {
-   "runs": 27,
-   "fetch_ok": 27,
+   "runs": 28,
+   "fetch_ok": 28,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49594,9 +49594,9 @@
    "alive_hist": [
     24,
     24,
-    24,
     26,
     25,
+    24,
     24,
     24,
     24,
@@ -49604,7 +49604,7 @@
     24
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034500
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/keep_one/Oldies.m3u": {
    "runs": 1,
@@ -49924,8 +49924,8 @@
    "last_run": 1794335157
   },
   "https://raw.githubusercontent.com/hayatiptv/iptv/HEAD/BDNLTR.m3u": {
-   "runs": 22,
-   "fetch_ok": 22,
+   "runs": 23,
+   "fetch_ok": 23,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49940,7 +49940,7 @@
     21
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/vip.m3u": {
    "runs": 7,
@@ -49962,8 +49962,8 @@
    "last_run": 1794694946
   },
   "https://raw.githubusercontent.com/hayatiptv/iptv/HEAD/index.m3u": {
-   "runs": 22,
-   "fetch_ok": 22,
+   "runs": 23,
+   "fetch_ok": 23,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -49977,7 +49977,7 @@
     30
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/online_radio_box/oldies.m3u": {
    "runs": 1,
@@ -49994,8 +49994,8 @@
    "last_run": 1794335157
   },
   "https://raw.githubusercontent.com/raalbatros/iptv/HEAD/yeni.m3u": {
-   "runs": 20,
-   "fetch_ok": 20,
+   "runs": 21,
+   "fetch_ok": 21,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50014,7 +50014,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/vn%20copy.m3u": {
    "runs": 11,
@@ -50054,8 +50054,8 @@
    "last_run": 1794564010
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/gems.m3u": {
-   "runs": 17,
-   "fetch_ok": 17,
+   "runs": 18,
+   "fetch_ok": 18,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50063,11 +50063,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/0xymg/iptv/HEAD/list2.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
+   "runs": 17,
+   "fetch_ok": 17,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50086,11 +50086,11 @@
     3
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/az.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50098,7 +50098,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/kadirsener1/CanliTvListe/HEAD/trgoals.m3u": {
    "runs": 4,
@@ -50135,8 +50135,8 @@
    "last_run": 1794694948
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/liri.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50144,11 +50144,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/luc.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50156,7 +50156,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/bayzero1905/msiptv/HEAD/m3u/spor.m3u": {
    "runs": 4,
@@ -50176,8 +50176,8 @@
    "last_run": 1794377764
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/bursa.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50185,11 +50185,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/nthack/IPTVM3U/HEAD/All.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50197,7 +50197,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/knxwille/FilmTv/HEAD/spor.m3u": {
    "runs": 4,
@@ -50217,8 +50217,8 @@
    "last_run": 1794377764
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/medo2.m3u": {
-   "runs": 17,
-   "fetch_ok": 17,
+   "runs": 18,
+   "fetch_ok": 18,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50226,11 +50226,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/moe.m3u": {
-   "runs": 20,
-   "fetch_ok": 20,
+   "runs": 21,
+   "fetch_ok": 21,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50238,7 +50238,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/TributeLLC/205522/HEAD/TRT.m3u": {
    "runs": 4,
@@ -50270,8 +50270,8 @@
    "last_run": 1794564009
   },
   "https://raw.githubusercontent.com/aeborg/repoiptv/HEAD/playlist.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50286,14 +50286,15 @@
     1,
     1,
     0,
+    1,
     1
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/tural.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50301,7 +50302,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/safwan-nj/satcom/HEAD/turks1.m3u": {
    "runs": 5,
@@ -50385,8 +50386,8 @@
    "last_run": 1794694948
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/toto1.m3u": {
-   "runs": 17,
-   "fetch_ok": 17,
+   "runs": 18,
+   "fetch_ok": 18,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50394,11 +50395,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/aca.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50406,11 +50407,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/toto.m3u": {
-   "runs": 20,
-   "fetch_ok": 20,
+   "runs": 21,
+   "fetch_ok": 21,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50418,11 +50419,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/bnt.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50430,11 +50431,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/michaz1988/michaz1988.github.io/HEAD/tv.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50442,11 +50443,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/ph03y3nk/dentovi/HEAD/cek.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50454,7 +50455,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/kadirsener1/CanliTvListe/HEAD/1.m3u": {
    "runs": 9,
@@ -50476,8 +50477,8 @@
    "last_run": 1794987670
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/medo5.m3u": {
-   "runs": 17,
-   "fetch_ok": 17,
+   "runs": 18,
+   "fetch_ok": 18,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50485,11 +50486,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/oti.m3u": {
-   "runs": 20,
-   "fetch_ok": 20,
+   "runs": 21,
+   "fetch_ok": 21,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50497,11 +50498,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptv-ch/iptv-ch.github.io/HEAD/init7-tv7.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50509,11 +50510,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/0xymg/iptv/HEAD/list.m3u": {
-   "runs": 21,
-   "fetch_ok": 21,
+   "runs": 22,
+   "fetch_ok": 22,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50521,7 +50522,6 @@
    "alive": 6,
    "alive_hist": [
     6,
-    6,
     5,
     5,
     6,
@@ -50529,37 +50529,38 @@
     3,
     3,
     3,
+    6,
     6
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/raalbatros/iptv/HEAD/live.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
+   "runs": 17,
+   "fetch_ok": 17,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 37,
-   "alive": 4,
+   "alive": 3,
    "alive_hist": [
     4,
     4,
     4,
-    4,
     3,
     3,
     3,
     4,
     3,
-    4
+    4,
+    3
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/raalbatros/iptv/HEAD/canlitv.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
+   "runs": 17,
+   "fetch_ok": 17,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -50578,11 +50579,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/tototurk.m3u": {
-   "runs": 17,
-   "fetch_ok": 17,
+   "runs": 18,
+   "fetch_ok": 18,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50590,11 +50591,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/rideordie16/tv/HEAD/tv2.m3u": {
-   "runs": 7,
-   "fetch_ok": 7,
+   "runs": 8,
+   "fetch_ok": 8,
    "fails_row": 0,
    "zero_row": 5,
    "q_until": 1794983947,
@@ -50608,11 +50609,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/hn.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50620,7 +50621,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/neo.m3u": {
    "runs": 10,
@@ -50642,8 +50643,8 @@
    "last_run": 1794987671
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/88.m3u": {
-   "runs": 20,
-   "fetch_ok": 20,
+   "runs": 21,
+   "fetch_ok": 21,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50651,11 +50652,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/tr%20copy.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50674,11 +50675,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/bio.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -50686,7 +50687,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/Dmitriy11223455/FREE_IPTV/HEAD/FREE_IPTV.m3u8": {
    "runs": 10,
@@ -50773,9 +50774,8 @@
    "zero_row": 0,
    "q_until": 0,
    "found": 268,
-   "alive": 36,
+   "alive": 22,
    "alive_hist": [
-    51,
     54,
     47,
     36,
@@ -50784,7 +50784,8 @@
     24,
     54,
     37,
-    36
+    36,
+    22
    ],
    "kind": "auto",
    "last_run": 1794902683
@@ -50913,12 +50914,12 @@
    "found": 33,
    "alive": 4,
    "alive_hist": [
-    5,
     4,
     5,
     5,
     5,
     5,
+    4,
     4,
     4,
     4,
@@ -50981,9 +50982,8 @@
    "zero_row": 0,
    "q_until": 0,
    "found": 209,
-   "alive": 4,
+   "alive": 1,
    "alive_hist": [
-    4,
     4,
     9,
     9,
@@ -50992,7 +50992,8 @@
     4,
     8,
     3,
-    4
+    4,
+    1
    ],
    "kind": "auto",
    "last_run": 1794902684
@@ -51074,12 +51075,12 @@
    "alive": 1,
    "alive_hist": [
     0,
-    0,
     1,
     1,
     1,
     1,
     0,
+    1,
     1,
     1,
     1
@@ -51153,12 +51154,12 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/u.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 13,
    "q_until": 0,
-   "found": 58,
+   "found": 57,
    "alive": 0,
    "alive_hist": [
     0,
@@ -51173,18 +51174,17 @@
     0
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/turkuvaz_discovered.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 7,
-   "alive": 8,
+   "alive": 9,
    "alive_hist": [
-    4,
     5,
     0,
     5,
@@ -51193,21 +51193,21 @@
     0,
     7,
     0,
-    8
+    8,
+    9
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/tr.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 153,
-   "alive": 33,
+   "found": 149,
+   "alive": 32,
    "alive_hist": [
-    30,
     32,
     31,
     30,
@@ -51216,21 +51216,21 @@
     31,
     32,
     33,
-    33
+    33,
+    32
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/r.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 17,
+   "found": 16,
    "alive": 1,
    "alive_hist": [
-    0,
     1,
     1,
     1,
@@ -51239,21 +51239,21 @@
     0,
     2,
     0,
+    1,
     1
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/priority_sources.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 79,
-   "alive": 3,
+   "alive": 1,
    "alive_hist": [
-    1,
     2,
     1,
     1,
@@ -51262,18 +51262,19 @@
     1,
     3,
     1,
-    3
+    3,
+    1
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/official_discovered.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 17,
+   "found": 16,
    "alive": 1,
    "alive_hist": [
     1,
@@ -51281,25 +51282,24 @@
     1,
     1,
     1,
-    1,
     2,
+    1,
     1,
     1,
     1
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/discovered.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 240,
-   "alive": 33,
+   "alive": 32,
    "alive_hist": [
-    29,
     30,
     30,
     30,
@@ -51308,33 +51308,33 @@
     33,
     32,
     32,
-    33
+    33,
+    32
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/kodlama155-ctrl/tv/main/all.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 232,
+   "found": 231,
    "alive": 0,
    "alive_hist": [],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/iptv-turk-tr/iptv/main/list.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 181,
-   "alive": 19,
+   "alive": 18,
    "alive_hist": [
-    17,
     20,
     18,
     18,
@@ -51343,14 +51343,15 @@
     19,
     19,
     18,
-    19
+    19,
+    18
    ],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/iptv-turk-tr/iptv/main/playlists/ulusal.m3u": {
-   "runs": 23,
-   "fetch_ok": 23,
+   "runs": 24,
+   "fetch_ok": 24,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -51358,7 +51359,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "manual",
-   "last_run": 1794987668
+   "last_run": 1795034497
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/HEAD/lists/video/sources/www-trt1-com-tr/arsiv/baba-candir.m3u": {
    "runs": 6,
@@ -51457,8 +51458,8 @@
    "last_run": 1794663186
   },
   "https://raw.githubusercontent.com/iptv-org/iptv/HEAD/streams/tr.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -51466,7 +51467,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/HEAD/lists/video/sources/www-trt1-com-tr/arsiv/yedi-guzel-adam.m3u": {
    "runs": 6,
@@ -51721,15 +51722,14 @@
    "last_run": 1794663185
   },
   "https://onureroz.com/indirmeler/turk/index.m3u": {
-   "runs": 20,
-   "fetch_ok": 18,
+   "runs": 21,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 542,
-   "alive": 44,
+   "alive": 43,
    "alive_hist": [
-    47,
     45,
     45,
     47,
@@ -51738,14 +51738,15 @@
     47,
     46,
     44,
-    44
+    44,
+    43
    ],
    "kind": "curated",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://onureroz.com/indirmeler/turk/tv2.m3u": {
-   "runs": 20,
-   "fetch_ok": 18,
+   "runs": 21,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 14,
    "q_until": 0,
@@ -51764,7 +51765,7 @@
     0
    ],
    "kind": "curated",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/2716.m3u8": {
    "runs": 5,
@@ -51779,15 +51780,14 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/TURK_HABER_IPTV.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 43,
    "alive": 6,
    "alive_hist": [
-    5,
     5,
     1,
     14,
@@ -51796,10 +51796,11 @@
     11,
     3,
     13,
+    6,
     6
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/xiongjian83/TvBox/HEAD/dzh.m3u8": {
    "runs": 5,
@@ -51837,8 +51838,8 @@
    "last_run": 1794723947
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/news.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -51846,7 +51847,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/KJW5487/iptv/HEAD/anber.m3u": {
    "runs": 6,
@@ -51930,8 +51931,8 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/hugo2.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -51939,7 +51940,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/lazbox/octocat/HEAD/streams/showturk.m3u8": {
    "runs": 6,
@@ -51954,8 +51955,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/mega.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -51963,7 +51964,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/redixlaz/skybox/HEAD/streams/showturk.m3u8": {
    "runs": 6,
@@ -52203,8 +52204,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/fadil.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52212,7 +52213,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/t_urkiye.m3u": {
    "runs": 4,
@@ -52232,8 +52233,8 @@
    "last_run": 1794637039
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/nehat.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52241,7 +52242,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/zeroflixxyz/livetv/HEAD/cast/ntv.m3u8": {
    "runs": 5,
@@ -52325,8 +52326,8 @@
    "last_run": 1794867425
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/general.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52334,11 +52335,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/hyper.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52346,7 +52347,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/stablesports711-hue/stable-sports-movie/HEAD/BANGLA/NTV.m3u8": {
    "runs": 5,
@@ -52378,15 +52379,14 @@
    "last_run": 1794811479
   },
   "https://raw.githubusercontent.com/HasBahCa/IPTV-LIST-OLD/HEAD/HasBahCa_TURK_ULUSAL.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 211,
-   "alive": 1,
+   "alive": 11,
    "alive_hist": [
-    1,
     1,
     1,
     1,
@@ -52395,10 +52395,11 @@
     3,
     1,
     1,
-    1
+    1,
+    11
    ],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptv-ch/iptv-ch.github.io/HEAD/webtv.m3u": {
    "runs": 4,
@@ -52427,8 +52428,8 @@
    "last_run": 1794399869
   },
   "https://raw.githubusercontent.com/feroxx/test/HEAD/Kanallar/canlitv.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52438,16 +52439,16 @@
     2,
     2,
     2,
-    2,
     1,
     2,
     4,
     4,
     3,
+    3,
     3
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/sotvlad1/playlist/HEAD/donTV-08.m3u8": {
    "runs": 5,
@@ -52491,8 +52492,8 @@
    "last_run": 1794768696
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/general_sd.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52500,11 +52501,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/mooncrown04/nuviotr/HEAD/providers/M3U/Liste/canli.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52516,26 +52517,26 @@
     1,
     1,
     1,
+    2,
+    2,
     1,
-    2,
-    2,
     1,
     1
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/sports_hd.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 6,
+   "found": 7,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/YueZhiFengMing/iptv_33333/HEAD/work/Free-TV.IPTV/playlists/playlist_turkey.m3u8": {
    "runs": 7,
@@ -52633,8 +52634,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/AdeelWajid/iptv_validated_list/HEAD/playlists/categories/news.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52642,7 +52643,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/myfriendqaz/LiveTVCollector/HEAD/BugsfreeStreams/StreamsTV-BD/fb_a_spor_9864ec67.m3u8": {
    "runs": 6,
@@ -52657,15 +52658,14 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Free-IPTV/HEAD/Lists/TR-STD.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 507,
-   "alive": 11,
+   "alive": 10,
    "alive_hist": [
-    1,
     1,
     1,
     18,
@@ -52674,10 +52674,11 @@
     15,
     5,
     16,
-    11
+    11,
+    10
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/shareyu.m3u": {
    "runs": 8,
@@ -52721,8 +52722,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/my.world_tuner/checked/turkiye.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52740,7 +52741,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/SuperNova-Repo/Vavuu-IPTV/HEAD/Vavoo-IPTV-France-France_Sport.m3u8": {
    "runs": 5,
@@ -52755,8 +52756,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/safwan-nj/satcom/HEAD/All.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -52775,7 +52776,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/asdjkl6/asdjkl6.github.io/HEAD/%E3%80%82.m3u/kodi.m3u8": {
    "runs": 5,
@@ -52790,8 +52791,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/my.world_tuner/turkish.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52805,11 +52806,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/kafana.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -52817,7 +52818,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Turis-Tv/Turis-Tv-m3u/HEAD/playlist/playlist.m3u8": {
    "runs": 8,
@@ -52828,13 +52829,13 @@
    "found": 82,
    "alive": 4,
    "alive_hist": [
-    3,
     5,
     4,
     4,
     4,
     3,
     3,
+    4,
     4,
     4,
     4
@@ -52886,11 +52887,11 @@
    "found": 114,
    "alive": 1,
    "alive_hist": [
-    0,
     1,
     0,
     0,
     0,
+    1,
     1,
     1,
     1,
@@ -52907,9 +52908,8 @@
    "zero_row": 0,
    "q_until": 0,
    "found": 157,
-   "alive": 4,
+   "alive": 3,
    "alive_hist": [
-    7,
     6,
     4,
     3,
@@ -52918,7 +52918,8 @@
     4,
     7,
     4,
-    4
+    4,
+    3
    ],
    "kind": "auto",
    "last_run": 1794902683
@@ -52932,6 +52933,7 @@
    "found": 108,
    "alive": 1,
    "alive_hist": [
+    1,
     1,
     1,
     1,
@@ -53012,15 +53014,14 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/TURK_ULUSAL_IPTV.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 100,
-   "alive": 15,
+   "alive": 4,
    "alive_hist": [
-    13,
     13,
     12,
     12,
@@ -53029,10 +53030,11 @@
     22,
     15,
     15,
-    15
+    15,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794867424
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/roseadmin/IPTV/HEAD/Arab/UAE.m3u8": {
    "runs": 4,
@@ -53052,8 +53054,8 @@
    "last_run": 1794663185
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/8store.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53061,7 +53063,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/SMOLNP.m3u8": {
    "runs": 5,
@@ -53110,12 +53112,12 @@
    "alive_hist": [
     1,
     1,
-    1,
     2,
     2,
     2,
     2,
     1,
+    2,
     2,
     2
    ],
@@ -53138,13 +53140,13 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/hezarfen/triptv/HEAD/triptv-yedek.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 113,
-   "alive": 1,
+   "alive": 3,
    "alive_hist": [
     0,
     1,
@@ -53154,10 +53156,11 @@
     0,
     0,
     0,
-    1
+    1,
+    3
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/lazbox/skybox/HEAD/streams/showturk.m3u8": {
    "runs": 6,
@@ -53184,8 +53187,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/AdeelWajid/iptv_validated_list/HEAD/playlists/countries/tr.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53204,7 +53207,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/streamlinkworld/Recall/HEAD/result/List/SHOWMAX.m3u8": {
    "runs": 6,
@@ -53219,8 +53222,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bchecked%2B/t/turkish.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -53238,7 +53241,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/abdcev/stream/HEAD/streams/now.m3u8": {
    "runs": 6,
@@ -53253,8 +53256,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/imiri.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53262,7 +53265,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/13/nang-dau-bao-tap-tap-1-pm72367.m3u8": {
    "runs": 7,
@@ -53281,15 +53284,14 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/TURK_DIGER_IPTV.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 54,
-   "alive": 14,
+   "alive": 18,
    "alive_hist": [
-    2,
     2,
     2,
     2,
@@ -53298,10 +53300,11 @@
     18,
     14,
     14,
-    14
+    14,
+    18
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/metvmetv33/METV/HEAD/metv2/NTV.m3u8": {
    "runs": 5,
@@ -53387,8 +53390,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/weihaoxie/iptv/HEAD/streams/tr.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -53398,11 +53401,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/streema/Drama.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53410,7 +53413,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/DMITRIY.m3u8": {
    "runs": 5,
@@ -53485,8 +53488,8 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/MrBricodage/M3U-Kodi/HEAD/IPTV-Heaven/List_005.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53494,7 +53497,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/MediaPortal/MediaPortal-1/HEAD/TvEngine3/TVLibrary/TVServer.Base/TuningParameters/dvbip/France.FreeBox_TV.m3u": {
    "runs": 5,
@@ -53608,10 +53611,10 @@
    "alive": 1,
    "alive_hist": [
     1,
+    2,
+    2,
+    2,
     1,
-    2,
-    2,
-    2,
     1,
     1,
     1,
@@ -53622,8 +53625,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/esko.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53631,7 +53634,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/arquerido/mych/HEAD/MYVOO.m3u8": {
    "runs": 5,
@@ -53646,8 +53649,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/spikeneedles/colab-media-link-extractor/HEAD/backend/backup/live_tv/2026-03-01T11-06-16-872Z_Halk%20TV%20%281080p%29.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53655,28 +53658,29 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/_zoo_/turkey.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 1000,
-   "alive": 3,
+   "alive": 4,
    "alive_hist": [
     4,
     3,
     4,
-    3
+    3,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/slux.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53684,7 +53688,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/t_rkiye.m3u": {
    "runs": 5,
@@ -53780,8 +53784,8 @@
    "last_run": 1794867424
   },
   "https://raw.githubusercontent.com/kaige-cai/live/HEAD/live.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53789,7 +53793,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_72.m3u8": {
    "runs": 5,
@@ -53816,8 +53820,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/beko1.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53825,7 +53829,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/fraudiay79/strm/HEAD/platforms/links/uvo/tv8.m3u8": {
    "runs": 5,
@@ -53840,8 +53844,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/brkeejp/Live-TV-Turkey/HEAD/live_tv.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 2,
    "q_until": 0,
@@ -53852,11 +53856,11 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/LiXiao-36/IPTV-per/HEAD/bestv.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53864,7 +53868,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/nomas67/my-hls-video/HEAD/baharsiafiz8.m3u8": {
    "runs": 7,
@@ -53953,8 +53957,8 @@
    "last_run": 1794768696
   },
   "https://raw.githubusercontent.com/shovo127/IPTV-By-Shovo/HEAD/streams/tr.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -53962,7 +53966,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/MYTV.m3u8": {
    "runs": 8,
@@ -53976,12 +53980,12 @@
     1,
     1,
     1,
-    1,
     2,
     1,
     0,
     2,
     0,
+    1,
     1
    ],
    "kind": "auto",
@@ -54067,8 +54071,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/sports.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54076,7 +54080,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/OlDom/BaltTV/HEAD/NTV-Style.m3u8": {
    "runs": 5,
@@ -54153,8 +54157,8 @@
    "last_run": 1794663186
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/loc3.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54162,11 +54166,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/king.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54174,7 +54178,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/18/nguoi-dan-ong-tot-tap-15-pm60758.m3u8": {
    "runs": 7,
@@ -54232,27 +54236,27 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/BugsfreeStreams/Output/StreamLinks-TR.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 59,
-   "alive": 26,
+   "alive": 25,
    "alive_hist": [
     24,
     24,
-    24,
     26,
     24,
     26,
     26,
     26,
     26,
-    26
+    26,
+    25
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/skmasum98/IPTV/HEAD/myiptv.m3u8": {
    "runs": 5,
@@ -54317,8 +54321,8 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/alwa50.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54326,7 +54330,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/superdizayn/rd/HEAD/euros.m3u8": {
    "runs": 6,
@@ -54341,8 +54345,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/astra.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54350,11 +54354,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/qqqqq.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54362,7 +54366,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/HEAD/cnTV1_GuoJi.m3u8": {
    "runs": 8,
@@ -54513,8 +54517,8 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/Romaxa55/world_ip_tv/HEAD/output/tr.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54522,7 +54526,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/HOMTV.m3u8": {
    "runs": 8,
@@ -54641,15 +54645,14 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Free-IPTV/HEAD/Lists/TR-SS.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 817,
-   "alive": 10,
+   "alive": 9,
    "alive_hist": [
-    3,
     3,
     3,
     4,
@@ -54658,10 +54661,11 @@
     5,
     8,
     4,
-    10
+    10,
+    9
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/17/thien-hau-dien-cuong-tap-11-pm46541.m3u8": {
    "runs": 7,
@@ -54736,15 +54740,14 @@
    "last_run": 1794987671
   },
   "https://raw.githubusercontent.com/vahithosan/Emacs/HEAD/TV.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 41,
-   "alive": 3,
+   "alive": 6,
    "alive_hist": [
-    2,
     3,
     2,
     2,
@@ -54753,14 +54756,15 @@
     3,
     3,
     2,
-    3
+    3,
+    6
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/flex.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54768,7 +54772,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/monzuguan/m3u/HEAD/TVListChecked.m3u8": {
    "runs": 4,
@@ -54788,8 +54792,8 @@
    "last_run": 1794564011
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/loki.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54797,11 +54801,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/prince8590/bein-sport/HEAD/tv_channels_dikrayatyfreefr.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -54809,19 +54813,19 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/AdeelWajid/iptv_validated_list/HEAD/playlists/categories/sports.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 376,
+   "found": 372,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/bscandua/hophop/HEAD/stream/tv360.m3u8": {
    "runs": 6,
@@ -55061,8 +55065,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/djup1.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55070,7 +55074,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/Hesen568/VIP-BLACK/HEAD/Azer_Sport_tv-restream.m3u8": {
    "runs": 6,
@@ -55120,18 +55124,19 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/music.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
-   "zero_row": 1,
+   "zero_row": 2,
    "q_until": 0,
    "found": 612,
    "alive": 0,
    "alive_hist": [
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_265.m3u8": {
    "runs": 5,
@@ -55230,15 +55235,14 @@
    "last_run": 1794811479
   },
   "https://raw.githubusercontent.com/HasBahCa/IPTV-LIST-OLD/HEAD/HasBahCa_TURK_HABER.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 50,
-   "alive": 6,
+   "alive": 4,
    "alive_hist": [
-    0,
     5,
     6,
     6,
@@ -55247,10 +55251,11 @@
     1,
     1,
     1,
-    6
+    6,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/brutal-45/IPTV-source/HEAD/streams/tr.m3u": {
    "runs": 6,
@@ -55284,8 +55289,8 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/omerdenizhan/IPTV-M3U/HEAD/m3u/turkiye-iptv-org.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55293,7 +55298,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Mostak840590/Jagoobd/HEAD/Jagoobd.m3u8": {
    "runs": 5,
@@ -55320,8 +55325,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/spikeneedles/colab-media-link-extractor/HEAD/backend/backup/live_tv/2026-03-01T11-07-06-886Z_TRT%20Haber%20%28720p%29.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55329,7 +55334,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/linqingping/M3U8-player/HEAD/sources.m3u8": {
    "runs": 5,
@@ -55385,8 +55390,8 @@
    "last_run": 1794723947
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/regula.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55394,7 +55399,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/LIST3.m3u8": {
    "runs": 5,
@@ -55421,8 +55426,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/phpxml/phpxml.github.io/HEAD/show.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55441,7 +55446,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/streamlinkworld/Recall/HEAD/result/List/SHWTR.m3u8": {
    "runs": 6,
@@ -55485,8 +55490,8 @@
    "last_run": 1794867426
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/business_hd.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55494,11 +55499,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/tr.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 2,
    "q_until": 0,
@@ -55509,7 +55514,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/17/yeu-gium-co-chu-tap-4-pm46449.m3u8": {
    "runs": 7,
@@ -55582,10 +55587,10 @@
    "alive_hist": [
     1,
     1,
+    2,
+    2,
+    2,
     1,
-    2,
-    2,
-    2,
     1,
     1,
     1,
@@ -55595,8 +55600,8 @@
    "last_run": 1794811479
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/hugo6.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55604,7 +55609,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_141.m3u8": {
    "runs": 5,
@@ -55623,8 +55628,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/satlok.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55632,7 +55637,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/home.m3u": {
    "runs": 6,
@@ -55685,13 +55690,13 @@
    "found": 2864,
    "alive": 9,
    "alive_hist": [
-    11,
     15,
     10,
     10,
     11,
     10,
     10,
+    9,
     9,
     9,
     9
@@ -55986,8 +55991,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/lixty/turkish_talk.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -55995,7 +56000,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_482.m3u8": {
    "runs": 5,
@@ -56043,8 +56048,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/ajkulla.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56052,7 +56057,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/NAROD.m3u8": {
    "runs": 5,
@@ -56105,8 +56110,8 @@
    "last_run": 1794987671
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/business.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56114,11 +56119,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/selo.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56126,19 +56131,18 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/streamlinkworld/Recall/HEAD/playlist.m3u8": {
    "runs": 7,
    "fetch_ok": 7,
    "fails_row": 0,
-   "zero_row": 0,
+   "zero_row": 1,
    "q_until": 0,
    "found": 21,
-   "alive": 1,
+   "alive": 0,
    "alive_hist": [
     3,
-    3,
     1,
     1,
     2,
@@ -56146,7 +56150,8 @@
     1,
     1,
     1,
-    1
+    1,
+    0
    ],
    "kind": "auto",
    "last_run": 1794811478
@@ -56213,8 +56218,8 @@
    "last_run": 1794637039
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/television.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56222,7 +56227,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/LIST1.m3u8": {
    "runs": 5,
@@ -56329,7 +56334,6 @@
    "found": 2514,
    "alive": 67,
    "alive_hist": [
-    94,
     91,
     81,
     77,
@@ -56338,6 +56342,7 @@
     73,
     67,
     70,
+    67,
     67
    ],
    "kind": "auto",
@@ -56368,19 +56373,20 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/eklins/FDTV/HEAD/zz/IPTV%20202307.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
-   "zero_row": 2,
+   "zero_row": 3,
    "q_until": 0,
    "found": 1191,
    "alive": 0,
    "alive_hist": [
     0,
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/top.m3u": {
    "runs": 5,
@@ -56401,16 +56407,16 @@
    "last_run": 1794867426
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/hd.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 185,
+   "found": 188,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/DIMAN%2B.m3u8": {
    "runs": 5,
@@ -56481,8 +56487,8 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/hayatiptv/iptv/HEAD/TRDECesitlikanallar.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56490,7 +56496,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/14/linh-hon-tinh-yeu-tap-8-pm68485.m3u8": {
    "runs": 7,
@@ -56573,15 +56579,14 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/raalbatros/iptv/HEAD/176.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 592,
-   "alive": 111,
+   "alive": 105,
    "alive_hist": [
-    112,
     112,
     112,
     109,
@@ -56590,10 +56595,11 @@
     112,
     112,
     111,
-    111
+    111,
+    105
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/misaka10843/cache/HEAD/JPTV.m3u8": {
    "runs": 5,
@@ -56738,8 +56744,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/pope3.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56747,7 +56753,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/GET.m3u8": {
    "runs": 5,
@@ -56794,8 +56800,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/a/ai.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56803,7 +56809,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/sardartv/1/HEAD/3.m3u8": {
    "runs": 5,
@@ -56847,8 +56853,8 @@
    "last_run": 1794663185
   },
   "https://raw.githubusercontent.com/iptv-com/iptv/HEAD/lists/world.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56856,7 +56862,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/alteri.m3u": {
    "runs": 8,
@@ -56888,8 +56894,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/lixty/Turkey.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -56897,7 +56903,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/xr3ed/xr3ed-tv/HEAD/xr3dtv.m3u8": {
    "runs": 5,
@@ -57007,13 +57013,13 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/turkiye.m3u": {
-   "runs": 10,
-   "fetch_ok": 10,
+   "runs": 11,
+   "fetch_ok": 11,
    "fails_row": 0,
-   "zero_row": 2,
+   "zero_row": 0,
    "q_until": 1794703960,
    "found": 1328,
-   "alive": 0,
+   "alive": 1,
    "alive_hist": [
     0,
     0,
@@ -57023,14 +57029,15 @@
     1,
     1,
     0,
-    0
+    0,
+    1
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/banja.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57038,7 +57045,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Zidan221/xyz/HEAD/Zidan.m3u8": {
    "runs": 6,
@@ -57102,8 +57109,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/AdeelWajid/iptv_validated_list/HEAD/playlists/languages/tur.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57111,7 +57118,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_487.m3u8": {
    "runs": 5,
@@ -57128,8 +57135,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/charger.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57137,7 +57144,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/DIMAN.m3u8": {
    "runs": 5,
@@ -57193,8 +57200,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/fshati.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57202,11 +57209,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/my.world_tuner/checked/turkish.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57217,7 +57224,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/ahmet21ahmet/Kablo/HEAD/stream/tv360.m3u8": {
    "runs": 6,
@@ -57264,7 +57271,6 @@
    "found": 190,
    "alive": 51,
    "alive_hist": [
-    50,
     58,
     51,
     51,
@@ -57273,14 +57279,15 @@
     46,
     58,
     53,
+    51,
     51
    ],
    "kind": "auto",
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/omerdenizhan/IPTV-M3U/HEAD/m3u/turkiye.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57288,7 +57295,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_478.m3u8": {
    "runs": 5,
@@ -57303,16 +57310,15 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/turkish.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
-   "zero_row": 0,
+   "zero_row": 1,
    "q_until": 0,
    "found": 4379,
-   "alive": 1,
+   "alive": 0,
    "alive_hist": [
     0,
-    0,
     1,
     1,
     1,
@@ -57320,10 +57326,11 @@
     0,
     0,
     1,
-    1
+    1,
+    0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_400.m3u8": {
    "runs": 5,
@@ -57350,8 +57357,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/lixty/television.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57359,7 +57366,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_200.m3u8": {
    "runs": 5,
@@ -57430,15 +57437,14 @@
    "last_run": 1794723947
   },
   "https://raw.githubusercontent.com/Sunstar16/MagisTV-AS-A-m3u-PLAYLIST/HEAD/MagisTV%2B.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 2759,
-   "alive": 10,
+   "alive": 11,
    "alive_hist": [
-    9,
     9,
     9,
     9,
@@ -57447,10 +57453,11 @@
     12,
     9,
     11,
-    10
+    10,
+    11
    ],
    "kind": "auto",
-   "last_run": 1794867427
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/bscandua/hophop/HEAD/streams/Nowtv.m3u8": {
    "runs": 6,
@@ -57503,8 +57510,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/gazzi.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57512,7 +57519,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/mehmetey03/hophop/HEAD/stream/tv360.m3u8": {
    "runs": 6,
@@ -57539,8 +57546,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/raalbatros/iptv/HEAD/tulix.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57559,18 +57566,17 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/HasBahCa/IPTV-LIST-OLD/HEAD/HasBahCa_TURK_MUZIK.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 46,
-   "alive": 2,
+   "alive": 8,
    "alive_hist": [
-    2,
     2,
     2,
     2,
@@ -57579,14 +57585,15 @@
     9,
     3,
     3,
-    2
+    2,
+    8
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/mega2.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57594,7 +57601,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/maximmur/iptvlist/HEAD/trashBad/tmp/main_12.m3u8": {
    "runs": 7,
@@ -57605,12 +57612,12 @@
    "found": 946,
    "alive": 1,
    "alive_hist": [
-    1,
     2,
     1,
     2,
     2,
     2,
+    1,
     1,
     1,
     1,
@@ -57620,8 +57627,8 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/Voodoo19/Voodoo-/HEAD/Hdr/TV/tvflix.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57629,11 +57636,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/satloki400.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57641,11 +57648,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/HEAD/top50.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57653,7 +57660,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/RAIMOND.m3u8": {
    "runs": 5,
@@ -57698,15 +57705,14 @@
    "last_run": 1794902685
   },
   "https://raw.githubusercontent.com/maviing/tr/HEAD/tv.m3u": {
-   "runs": 8,
-   "fetch_ok": 8,
+   "runs": 9,
+   "fetch_ok": 9,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 108,
    "alive": 5,
    "alive_hist": [
-    4,
     3,
     10,
     5,
@@ -57715,10 +57721,11 @@
     3,
     3,
     3,
+    5,
     5
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/ajonx/Ambyar-IPTV/HEAD/Indo.m3u8": {
    "runs": 5,
@@ -57739,9 +57746,8 @@
    "zero_row": 0,
    "q_until": 0,
    "found": 2033,
-   "alive": 8,
+   "alive": 4,
    "alive_hist": [
-    12,
     12,
     7,
     8,
@@ -57750,7 +57756,8 @@
     8,
     7,
     7,
-    8
+    8,
+    4
    ],
    "kind": "auto",
    "last_run": 1794811479
@@ -57792,8 +57799,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/amazi.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57801,7 +57808,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/46tv/mix/HEAD/feed/showturk.m3u8": {
    "runs": 6,
@@ -57858,15 +57865,14 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/levi-45/iptvstream/HEAD/TURK_SPOR_COCUK_IPTV.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 13,
-   "alive": 1,
+   "alive": 4,
    "alive_hist": [
-    1,
     1,
     1,
     1,
@@ -57875,10 +57881,11 @@
     4,
     1,
     1,
-    1
+    1,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/Q81990/IPTV/HEAD/11MyTvList.m3u8": {
    "runs": 7,
@@ -57904,8 +57911,8 @@
    "last_run": 1794811479
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/l/loca_tr.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57917,14 +57924,15 @@
     2,
     2,
     2,
+    2,
     2
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/hezarfen/triptv/HEAD/triptv.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57932,11 +57940,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/pope.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -57944,7 +57952,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/HEAD/m3u/3100%E4%B8%AA%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u8": {
    "runs": 6,
@@ -57994,8 +58002,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/nova.m3u": {
-   "runs": 11,
-   "fetch_ok": 11,
+   "runs": 12,
+   "fetch_ok": 12,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58003,11 +58011,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/t/turkish_talk.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58015,7 +58023,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/worldmediaman/Tester/HEAD/result/List/ATV.m3u8": {
    "runs": 6,
@@ -58080,8 +58088,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/fast1.m3u": {
-   "runs": 14,
-   "fetch_ok": 14,
+   "runs": 15,
+   "fetch_ok": 15,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58089,7 +58097,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/HEAD/lists/video/sources/www-trt1-com-tr/arsiv/bekir-develi-ile-annemin-yemegi.m3u": {
    "runs": 5,
@@ -58104,8 +58112,8 @@
    "last_run": 1794663186
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/pepsi.m3u.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58113,7 +58121,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/don24crk/Don24crk-Repository/HEAD/ATVAvrupa.m3u8": {
    "runs": 6,
@@ -58128,8 +58136,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/mjalta.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58137,7 +58145,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/my.world_tuner/turkiye.m3u": {
    "runs": 6,
@@ -58158,8 +58166,8 @@
    "last_run": 1794867426
   },
   "https://raw.githubusercontent.com/MrBricodage/M3U-Kodi/HEAD/IPTV-Heaven/List_008.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58167,11 +58175,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/u/up.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58179,7 +58187,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_204.m3u8": {
    "runs": 5,
@@ -58245,8 +58253,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/news_hd.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58254,7 +58262,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/HEAD/cnTV2_GuoNei.m3u8": {
    "runs": 8,
@@ -58269,8 +58277,8 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/AeonCoreX-Lab/streamx-iptv-data/HEAD/playlists/turkey.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58279,10 +58287,11 @@
    "alive_hist": [
     1,
     1,
+    1,
     1
    ],
    "kind": "auto",
-   "last_run": 1794867427
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/dalazhi/tvbox/HEAD/tv/gat0927.m3u8": {
    "runs": 5,
@@ -58377,8 +58386,8 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/malesh.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58386,18 +58395,17 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/eklins/FDTV/HEAD/tv/tv%20Global.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 1612,
-   "alive": 3,
+   "alive": 4,
    "alive_hist": [
-    3,
     3,
     2,
     3,
@@ -58406,10 +58414,11 @@
     5,
     4,
     4,
-    3
+    3,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/tektekno/deneme_yeni/HEAD/list.m3u8": {
    "runs": 7,
@@ -58430,15 +58439,14 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bchecked%2B/t/turkey.m3u": {
-   "runs": 12,
-   "fetch_ok": 12,
+   "runs": 13,
+   "fetch_ok": 13,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 1761,
-   "alive": 3,
+   "alive": 4,
    "alive_hist": [
-    3,
     4,
     3,
     4,
@@ -58447,10 +58455,11 @@
     3,
     3,
     3,
-    3
+    3,
+    4
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/neonka.m3u": {
    "runs": 6,
@@ -58486,9 +58495,9 @@
     1,
     1,
     1,
+    2,
+    2,
     1,
-    2,
-    2,
     1
    ],
    "kind": "auto",
@@ -58498,13 +58507,12 @@
    "runs": 5,
    "fetch_ok": 5,
    "fails_row": 0,
-   "zero_row": 0,
+   "zero_row": 1,
    "q_until": 0,
    "found": 2,
-   "alive": 1,
+   "alive": 0,
    "alive_hist": [
     1,
-    1,
     0,
     0,
     1,
@@ -58512,22 +58520,23 @@
     1,
     1,
     1,
-    1
+    1,
+    0
    ],
    "kind": "auto",
    "last_run": 1794663185
   },
   "https://raw.githubusercontent.com/mavin521/syiptv/HEAD/live.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
-   "found": 227,
+   "found": 231,
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/show.m3u": {
    "runs": 8,
@@ -58578,20 +58587,21 @@
    "last_run": 1794768696
   },
   "https://raw.githubusercontent.com/SajadTroy/openstream/HEAD/streams/tr.m3u": {
-   "runs": 4,
-   "fetch_ok": 4,
+   "runs": 5,
+   "fetch_ok": 5,
    "fails_row": 0,
-   "zero_row": 3,
-   "q_until": 0,
+   "zero_row": 4,
+   "q_until": 1795294189,
    "found": 285,
    "alive": 0,
    "alive_hist": [
     0,
     0,
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794867425
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/hexiaokun85/hxk85/HEAD/%E7%A7%81%E4%BA%BA/TiZi.m3u8": {
    "runs": 4,
@@ -58797,8 +58807,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/gtoomanyrequtus-oss/Javascpirt.m3u/HEAD/Yo.m3u": {
-   "runs": 8,
-   "fetch_ok": 8,
+   "runs": 9,
+   "fetch_ok": 9,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -58817,7 +58827,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/KISILEV.m3u8": {
    "runs": 5,
@@ -58832,8 +58842,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/plata.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58841,7 +58851,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/iptvmate/iptvchannels/HEAD/iptvmate.net_75.m3u8": {
    "runs": 5,
@@ -58859,20 +58869,21 @@
    "last_run": 1794902683
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/%2Bmerged%2B/d/drama.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
-   "zero_row": 3,
-   "q_until": 0,
+   "zero_row": 4,
+   "q_until": 1795294189,
    "found": 414,
    "alive": 0,
    "alive_hist": [
     0,
     0,
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/PrattoySaha/IPTV/HEAD/Prattoy.m3u8": {
    "runs": 4,
@@ -58962,8 +58973,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/gambler65/kongresi1908/HEAD/borni.m3u": {
-   "runs": 13,
-   "fetch_ok": 13,
+   "runs": 14,
+   "fetch_ok": 14,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -58971,7 +58982,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/diptosaha007/check/HEAD/index.m3u8": {
    "runs": 5,
@@ -59320,8 +59331,8 @@
    "last_run": 1794723946
   },
   "https://raw.githubusercontent.com/burccelikogludev-gh/turkiye-iptv-playlist/main/ulusal.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59332,11 +59343,11 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/gsls200808/tree-iptv-player/main/test-mpd.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59344,11 +59355,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/gsls200808/tree-iptv-player/main/test-rtsp.m3u": {
-   "runs": 18,
-   "fetch_ok": 18,
+   "runs": 19,
+   "fetch_ok": 19,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59356,11 +59367,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/qazim/IPTV/HEAD/tr.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59368,7 +59379,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/alpvelioglu/angular17-fundamentals/HEAD/playlist.m3u": {
    "runs": 2,
@@ -59398,8 +59409,8 @@
    "last_run": 1794564007
   },
   "https://raw.githubusercontent.com/Phoenix89S/IpTV_playlist_2026Ru/HEAD/8.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59418,18 +59429,18 @@
     2
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/ivalenzuela/rokutv/HEAD/p.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 155,
    "alive": 1,
    "alive_hist": [
-    0,
+    1,
     1,
     1,
     1,
@@ -59441,7 +59452,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/sooneer/soneracar.net/HEAD/old/ip.m3u": {
    "runs": 2,
@@ -59484,7 +59495,7 @@
    "alive_hist": [
     2,
     2,
-    2,
+    1,
     1,
     1,
     1,
@@ -59530,8 +59541,8 @@
    "last_run": 1794987671
   },
   "https://raw.githubusercontent.com/Ardiebwi/ardiebwi.github.io/HEAD/stb.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59539,11 +59550,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/BahyOsama/dinurunn/HEAD/b1.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59561,7 +59572,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/ilkruzn/iptv/HEAD/tr.m3u": {
    "runs": 2,
@@ -59608,8 +59619,8 @@
    "last_run": 1794564007
   },
   "https://raw.githubusercontent.com/dinmil/KafkaGate/HEAD/tv.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59617,7 +59628,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/tu1star/1ptv/HEAD/LA3.m3u": {
    "runs": 5,
@@ -59672,8 +59683,8 @@
    "last_run": 1794564008
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/999.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59681,7 +59692,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/patr0nq/link/HEAD/dragon.m3u": {
    "runs": 2,
@@ -59693,7 +59704,6 @@
    "alive": 2,
    "alive_hist": [
     2,
-    2,
     1,
     2,
     2,
@@ -59701,6 +59711,7 @@
     1,
     2,
     1,
+    2,
     2
    ],
    "kind": "auto",
@@ -59854,8 +59865,8 @@
    "last_run": 1794564009
   },
   "https://raw.githubusercontent.com/BahyOsama/dinurunn/HEAD/vv.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59869,10 +59880,11 @@
     1,
     0,
     0,
+    1,
     1
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/s8.m3u": {
    "runs": 5,
@@ -59916,8 +59928,8 @@
    "last_run": 1794564012
   },
   "https://raw.githubusercontent.com/molun/molun.github.io/HEAD/zho.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -59925,7 +59937,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/tw2.m3u": {
    "runs": 4,
@@ -59996,8 +60008,8 @@
    "last_run": 1794987672
   },
   "https://raw.githubusercontent.com/Yusiff0/IPTV-Azerbaycan-ve-Turkiye-kanallari/HEAD/az.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60005,7 +60017,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/BahriKahraman/BK/HEAD/BK.m3u": {
    "runs": 2,
@@ -60016,13 +60028,13 @@
    "found": 34,
    "alive": 2,
    "alive_hist": [
-    2,
     3,
     2,
     2,
     2,
     2,
     3,
+    2,
     2,
     2,
     2
@@ -60046,8 +60058,8 @@
    "last_run": 1794564013
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/117.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60055,7 +60067,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/forcef5/m3u8/HEAD/phimbo/16/cloak-va-dagger-phan-1-tap-1-pm68800.m3u8": {
    "runs": 6,
@@ -60074,8 +60086,8 @@
    "last_run": 1794811477
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/03.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60083,7 +60095,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/hakandemirci12ay/hakan812/HEAD/jettv.m3u": {
    "runs": 2,
@@ -60121,8 +60133,8 @@
    "last_run": 1794694948
   },
   "https://raw.githubusercontent.com/dinmil/KafkaGate/HEAD/tv1.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60130,11 +60142,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/123.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60142,7 +60154,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/peteythepanda/m3u/HEAD/tv.m3u": {
    "runs": 2,
@@ -60160,8 +60172,8 @@
    "last_run": 1794564013
   },
   "https://raw.githubusercontent.com/rvargas200787/LIsT-IpTv-mine.m3u/HEAD/NEW.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60169,7 +60181,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/KiNGTV2025/King-/HEAD/canli.m3u": {
    "runs": 2,
@@ -60213,8 +60225,8 @@
    "last_run": 1794564008
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/v10.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60222,11 +60234,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/n9%2B.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60234,7 +60246,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/hhdblog/TR/HEAD/tv.m3u": {
    "runs": 2,
@@ -60252,8 +60264,8 @@
    "last_run": 1794564011
   },
   "https://raw.githubusercontent.com/belajarit45/index/HEAD/new.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60261,34 +60273,34 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/archancel25/tvc/HEAD/mfa.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 32,
-   "alive": 7,
+   "alive": 6,
    "alive_hist": [
     7,
     7,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5,
     7,
-    6,
-    6,
-    6,
-    5,
-    5,
-    5,
-    7
+    6
    ],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/tu1star/1ptv/HEAD/LA1.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 1,
    "q_until": 0,
@@ -60298,7 +60310,7 @@
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/3334.m3u": {
    "runs": 4,
@@ -60441,31 +60453,31 @@
    "last_run": 1794564006
   },
   "https://raw.githubusercontent.com/reysc/M3U8/HEAD/all.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
-   "zero_row": 3,
-   "q_until": 0,
+   "zero_row": 4,
+   "q_until": 1795294189,
    "found": 1476,
    "alive": 0,
    "alive_hist": [
     0,
     0,
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/ultrasoner55/tv/HEAD/tv.m3u": {
-   "runs": 6,
-   "fetch_ok": 6,
+   "runs": 7,
+   "fetch_ok": 7,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
    "found": 159,
-   "alive": 13,
+   "alive": 16,
    "alive_hist": [
-    8,
     9,
     14,
     14,
@@ -60474,14 +60486,15 @@
     9,
     9,
     9,
-    13
+    13,
+    16
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Morpheuz2025/epgY/HEAD/st.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60489,7 +60502,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/555ip/iptv/HEAD/index.m3u": {
    "runs": 2,
@@ -60502,13 +60515,13 @@
    "alive_hist": [
     3,
     3,
-    3,
     4,
     4,
     3,
     4,
     4,
     4,
+    3,
     3
    ],
    "kind": "auto",
@@ -60553,8 +60566,8 @@
    "last_run": 1794564010
   },
   "https://raw.githubusercontent.com/aabadfer/iptv/HEAD/tdt.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60571,7 +60584,7 @@
     1
    ],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/tecobaba/tecom3u/HEAD/guncel.m3u": {
    "runs": 2,
@@ -60582,7 +60595,6 @@
    "found": 237,
    "alive": 10,
    "alive_hist": [
-    11,
     13,
     11,
     11,
@@ -60590,6 +60602,7 @@
     11,
     9,
     9,
+    10,
     10,
     10
    ],
@@ -60642,8 +60655,8 @@
    "last_run": 1794694948
   },
   "https://raw.githubusercontent.com/tsynik/tsynik.github.io/HEAD/tv.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60651,7 +60664,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/v10%2B.m3u": {
    "runs": 4,
@@ -60681,8 +60694,8 @@
    "last_run": 1794564011
   },
   "https://raw.githubusercontent.com/jk2024988/TV2024/HEAD/z%2B.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60690,7 +60703,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/Kodibd/ip/HEAD/index.m3u": {
    "runs": 2,
@@ -60701,11 +60714,11 @@
    "found": 154,
    "alive": 2,
    "alive_hist": [
-    2,
     4,
     3,
     2,
     3,
+    2,
     2,
     2,
     2,
@@ -60746,10 +60759,10 @@
    "runs": 2,
    "fetch_ok": 2,
    "fails_row": 0,
-   "zero_row": 0,
+   "zero_row": 1,
    "q_until": 0,
    "found": 134,
-   "alive": 1,
+   "alive": 0,
    "alive_hist": [
     1,
     1,
@@ -60760,7 +60773,7 @@
     1,
     1,
     1,
-    1
+    0
    ],
    "kind": "auto",
    "last_run": 1794564009
@@ -60796,8 +60809,8 @@
    "last_run": 1794564008
   },
   "https://raw.githubusercontent.com/Rafail1082GitHUB/rafail1982.ru/HEAD/MIX2.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60805,7 +60818,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/roblive/ipTV/HEAD/iptv3.m3u": {
    "runs": 2,
@@ -60838,8 +60851,8 @@
    "last_run": 1794694946
   },
   "https://raw.githubusercontent.com/justintxu/repo/HEAD/LR.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60847,7 +60860,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/bscandua/hophop/HEAD/stream/tv8.m3u8": {
    "runs": 5,
@@ -60877,8 +60890,8 @@
    "last_run": 1794564009
   },
   "https://raw.githubusercontent.com/DroidIPTV/droidiptv.github.io/HEAD/tv.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60886,7 +60899,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/bscandua/veyissss/HEAD/trgoals.m3u": {
    "runs": 2,
@@ -60931,8 +60944,8 @@
    "last_run": 1794564012
   },
   "https://raw.githubusercontent.com/saif-uddin-shrabon/IPFILE/HEAD/sqi.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60940,11 +60953,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/BahyOsama/marioo/HEAD/dd.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60952,7 +60965,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/Yusufdkci/iptv/HEAD/liste.m3u": {
    "runs": 2,
@@ -60979,8 +60992,8 @@
    "last_run": 1794564008
   },
   "https://raw.githubusercontent.com/antolexalex/prueba/HEAD/tv.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -60988,7 +61001,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/aygitci/trtv/HEAD/eftv.m3u": {
    "runs": 2,
@@ -61007,8 +61020,8 @@
    "last_run": 1794564009
   },
   "https://raw.githubusercontent.com/ajonx/Ambyar-IPTV/HEAD/Usee.m3u": {
-   "runs": 5,
-   "fetch_ok": 5,
+   "runs": 6,
+   "fetch_ok": 6,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61016,7 +61029,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/satmike1/Senderliste/HEAD/TR.m3u": {
    "runs": 2,
@@ -61041,12 +61054,12 @@
    "alive_hist": [
     14,
     14,
-    14,
     13,
     12,
     14,
     14,
     13,
+    14,
     14,
     14
    ],
@@ -61101,8 +61114,8 @@
    "last_run": 1794564010
   },
   "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/extended.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
+   "runs": 17,
+   "fetch_ok": 17,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61110,9 +61123,93 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034499
   },
   "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/hls-all-tags.m3u8": {
+   "runs": 17,
+   "fetch_ok": 17,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 4,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034499
+  },
+  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/hls-media.m3u8": {
+   "runs": 17,
+   "fetch_ok": 17,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 3,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034499
+  },
+  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/hls-multivariant.m3u8": {
+   "runs": 17,
+   "fetch_ok": 0,
+   "fails_row": 17,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 0,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034499
+  },
+  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/iptv.m3u": {
+   "runs": 17,
+   "fetch_ok": 17,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 3,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034499
+  },
+  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/simple.m3u": {
+   "runs": 17,
+   "fetch_ok": 17,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 4,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034499
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 10,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 6,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports_sd.m3u": {
    "runs": 16,
    "fetch_ok": 16,
    "fails_row": 0,
@@ -61122,9 +61219,21 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034500
   },
-  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/hls-media.m3u8": {
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/all.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 221,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation.m3u": {
    "runs": 16,
    "fetch_ok": 16,
    "fails_row": 0,
@@ -61134,9 +61243,321 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034500
   },
-  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/hls-multivariant.m3u8": {
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 2,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 1,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 5,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 3,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 2,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 6,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 5,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 1,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 7,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 5,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 2,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 6,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 5,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 1,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 13,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 11,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 2,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 60,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 51,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 9,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 183,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 12,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 7,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids_sd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 5,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 1,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle_hd.m3u": {
+   "runs": 16,
+   "fetch_ok": 16,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 1,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle_sd.m3u": {
    "runs": 16,
    "fetch_ok": 0,
    "fails_row": 16,
@@ -61146,419 +61567,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/iptv.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 3,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/mlinder/tree-sitter-m3u/main/examples/simple.m3u": {
-   "runs": 16,
-   "fetch_ok": 16,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 4,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 10,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 6,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/sports_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 4,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/all.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 221,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 3,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 2,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/animation_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 1,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 5,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 3,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/business_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 2,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 6,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 5,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/culture_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 1,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 7,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 5,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/documentary_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 2,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 6,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 5,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/education_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 1,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 13,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 11,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/entertainment_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 2,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 60,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 51,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/general_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 9,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 183,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 12,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 7,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/kids_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 5,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 1,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
-   "fails_row": 0,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 1,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
-  },
-  "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/lifestyle_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 0,
-   "fails_row": 15,
-   "zero_row": 0,
-   "q_until": 0,
-   "found": 0,
-   "alive": 0,
-   "alive_hist": [],
-   "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/music.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61566,11 +61579,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/music_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61578,11 +61591,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/music_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61590,11 +61603,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/news.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61602,11 +61615,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/news_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61614,11 +61627,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/news_sd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61626,11 +61639,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/outdoor.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61638,11 +61651,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "https://raw.githubusercontent.com/Maxsool/open-tv-playlist/main/playlists/tur/outdoor_hd.m3u": {
-   "runs": 15,
-   "fetch_ok": 15,
+   "runs": 16,
+   "fetch_ok": 16,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61650,7 +61663,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034501
   },
   "http://specialboxxserver.com:8080/get.php?username=@01Zero01Adana&password=jYD6uYebDJsM&type=m3u_plus": {
    "runs": 1,
@@ -61677,24 +61690,25 @@
    "last_run": 1794902684
   },
   "https://raw.githubusercontent.com/longhai/iptv/HEAD/iptv.m3u": {
-   "runs": 3,
-   "fetch_ok": 3,
+   "runs": 4,
+   "fetch_ok": 4,
    "fails_row": 0,
-   "zero_row": 3,
-   "q_until": 0,
+   "zero_row": 4,
+   "q_until": 1795294189,
    "found": 380,
    "alive": 0,
    "alive_hist": [
     0,
     0,
+    0,
     0
    ],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034502
   },
   "https://raw.githubusercontent.com/macukadam/iptv/main/tr.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61702,11 +61716,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/macukadam/iptv/main/en.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61714,11 +61728,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/macukadam/iptv/main/kids.m3u": {
-   "runs": 9,
-   "fetch_ok": 9,
+   "runs": 10,
+   "fetch_ok": 10,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61726,7 +61740,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034498
   },
   "https://raw.githubusercontent.com/Joker-Cold/HK-IPTV/HEAD/COLD_OK.m3u8": {
    "runs": 3,
@@ -61765,8 +61779,8 @@
    "last_run": 1794723945
   },
   "https://raw.githubusercontent.com/M3UCurator/IPTVList/HEAD/PlaylistNew.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61774,7 +61788,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867426
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/IMAN-Py/open-tv-atlas/HEAD/playlists/tur/music_hd.m3u": {
    "runs": 1,
@@ -61789,8 +61803,8 @@
    "last_run": 1794867426
   },
   "https://raw.githubusercontent.com/lensphotostudio/turk-iptv/HEAD/kanallar.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61798,7 +61812,7 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794867427
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/eorkun/turkspor-iptv/main/playlist.m3u": {
    "runs": 1,
@@ -61810,14 +61824,15 @@
    "alive": 1,
    "alive_hist": [
     1,
+    1,
     1
    ],
    "kind": "auto",
    "last_run": 1794949416
   },
   "https://raw.githubusercontent.com/YosemiteSam6/turkiye-iptv-m3u-m3u8/HEAD/kanallar.m3u": {
-   "runs": 2,
-   "fetch_ok": 2,
+   "runs": 3,
+   "fetch_ok": 3,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61825,11 +61840,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/mq.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61837,11 +61852,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987669
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/junguler/m3u-radio-music-playlists/HEAD/90s.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61849,11 +61864,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987670
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/gn.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61861,11 +61876,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/tokio14-dot/prrr/HEAD/01.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61873,11 +61888,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034503
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/hn.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61885,11 +61900,11 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987671
+   "last_run": 1795034504
   },
   "https://raw.githubusercontent.com/kilirushi/iptv/HEAD/az.m3u": {
-   "runs": 1,
-   "fetch_ok": 1,
+   "runs": 2,
+   "fetch_ok": 2,
    "fails_row": 0,
    "zero_row": 0,
    "q_until": 0,
@@ -61897,7 +61912,105 @@
    "alive": 0,
    "alive_hist": [],
    "kind": "auto",
-   "last_run": 1794987672
+   "last_run": 1795034504
+  },
+  "https://raw.githubusercontent.com/PAANMILE/true-iptv/main/true_tv.m3u": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 13,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034500
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/kanallar.m3u": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 439,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/kanallar.m3u8": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 439,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/cocuk.m3u": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 12,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/cocuk.m3u8": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 12,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/top50.m3u": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 49,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/ferit-pixel/turkiye-iptv-m3u-m3u8/main/top50.m3u8": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 49,
+   "alive": 0,
+   "alive_hist": [],
+   "kind": "auto",
+   "last_run": 1795034501
+  },
+  "https://raw.githubusercontent.com/bugsfreeweb/LiveTVCollector/HEAD/LiveTV/Egypt/LiveTV.m3u": {
+   "runs": 1,
+   "fetch_ok": 1,
+   "fails_row": 0,
+   "zero_row": 0,
+   "q_until": 0,
+   "found": 188,
+   "alive": 8,
+   "alive_hist": [
+    8
+   ],
+   "kind": "auto",
+   "last_run": 1795034503
   }
  }
 }
